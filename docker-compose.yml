@@ -1,0 +1,12 @@
+version: '3'
+services:
+  mazzoleniodontologia:
+    image: mazzoleniodontologia
+    build: .
+    ports:
+      - 3000:3000
+    volumes:
+      - ./components:/app/components
+      - ./pages:/app/pages
+      - ./public:/app/public
+      - ./styles:/app/styles
