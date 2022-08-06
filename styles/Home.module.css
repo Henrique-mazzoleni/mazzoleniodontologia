@@ -3,6 +3,7 @@
 }
 
 .main {
+  background-image: "/Clinica-sala-de-espera.jpg";
   min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
@@ -124,6 +125,5 @@
     background: #111;
   }
   .logo img {
-    filter: invert(1);
   }
 }
