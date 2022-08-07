@@ -1,10 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
+import { Fragment } from "react";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <Fragment>
       <Head>
         <title>Mazzoleni Odontologia</title>
         <meta
@@ -23,8 +24,6 @@ export default function Home() {
           Atendemos todas as especialidades com o mais alto rigor técnico e as
           últimas tecnologias disponíveis no mercado.
         </p>
-
-        <div className={styles.grid}></div>
       </main>
 
       <footer className={styles.footer}>
@@ -35,10 +34,15 @@ export default function Home() {
         >
           Powered by{" "}
           <span className={styles.logo}>
-            <Image src="/Mazzoleni_logo.jpg" alt="Mazzoleni Logo" width={72} height={72} />
+            <Image
+              src="/Mazzoleni_logo.jpg"
+              alt="Mazzoleni Logo"
+              width={128}
+              height={85}
+            />
           </span>
         </a>
       </footer>
-    </div>
+    </Fragment>
   );
 }
