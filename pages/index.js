@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Fragment } from "react";
+import Navbar from "../components/Navbar";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -15,11 +16,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <header className={styles.header}>
+        <div className={styles.overlay} />
+        <Navbar />
+        <div className={styles["header-content"]}>
+          <h1 className={styles.title}>
+            Bem vindo a Clínica Odontológica Mazzoleni
+          </h1>
+        </div>
+      </header>
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Bem vindo a Clínica odontológica Mazzoleni
-        </h1>
-
         <p className={styles.description}>
           Atendemos todas as especialidades com o mais alto rigor técnico e as
           últimas tecnologias disponíveis no mercado.
