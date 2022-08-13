@@ -34,15 +34,15 @@ export default function Infos() {
         <FontAwesomeIcon icon={faPhone} size="2x" />
         <h3>Telefone</h3>
         <p>
-          (11) 3499-0490
+          11 3499-0490
           <br />
-          (11) 95000-2799
+          11 95000-2799
         </p>
       </div>
       <div className={styles.card}>
         <FontAwesomeIcon icon={faWhatsapp} size="2x" />
         <h3>Whatsapp</h3>
-        <p>(11) 95000-2799</p>
+        <p>11 95000-2799</p>
         </div>
     </section>
   );

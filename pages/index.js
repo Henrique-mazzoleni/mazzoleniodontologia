@@ -25,7 +25,7 @@ export default function Home() {
         <Navbar />
         <div className={styles["header-content"]}>
           <h1 className={styles.title}>
-            Bem vindo a Clínica Odontológica Mazzoleni
+            Deus da dente pra quem nao precisa.
           </h1>
         </div>
       </header>
