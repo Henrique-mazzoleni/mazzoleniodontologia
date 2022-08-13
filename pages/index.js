@@ -1,7 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
+
 import { Fragment } from "react";
+
+import Infos from "../components/Infos";
 import Navbar from "../components/Navbar";
+
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -26,6 +30,7 @@ export default function Home() {
         </div>
       </header>
       <main className={styles.main}>
+        <Infos />
         <p className={styles.description}>
           Atendemos todas as especialidades com o mais alto rigor técnico e as
           últimas tecnologias disponíveis no mercado.

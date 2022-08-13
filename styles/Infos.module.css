@@ -1,0 +1,21 @@
+.infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 250px;
+    width: 900px;
+    background: #eee;
+    margin-top: -70px;
+    padding: 0 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px #aaa;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    z-index: 100;
+}
+
+.card {
+    height: 190px;
+    margin: 30px 15px;
+    padding: 25px;
+}
