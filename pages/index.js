@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
-
 import { Fragment } from "react";
 
-import Infos from "../components/Infos";
 import Navbar from "../components/Navbar";
+import Infos from "../components/Infos";
+import Description from "../components/Description";
 
 import styles from "../styles/Home.module.css";
 
@@ -25,16 +25,13 @@ export default function Home() {
         <Navbar />
         <div className={styles["header-content"]}>
           <h1 className={styles.title}>
-            Deus da dente pra quem nao precisa.
+            Deus da dente <br />pra quem nao precisa.
           </h1>
         </div>
       </header>
       <main className={styles.main}>
         <Infos />
-        <p className={styles.description}>
-          Atendemos todas as especialidades com o mais alto rigor técnico e as
-          últimas tecnologias disponíveis no mercado.
-        </p>
+        <Description />
       </main>
 
       <footer className={styles.footer}>

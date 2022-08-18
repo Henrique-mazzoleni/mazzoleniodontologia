@@ -5,13 +5,13 @@
     top: 0;
     height: 20%;
     z-index: 10;
+    color: var(--primary-color);
 }
 
 .content {
     display: flex;
     justify-content: space-between;
     background-color: rgba(0,0,0,0);
-    color: #333;
     text-shadow: 1px 1px 1px #ddd;
     min-height: 100px;
     padding: 0 15%;
@@ -37,7 +37,7 @@
 }
 
 .links li:hover {
-    border-top: 3px solid #333;
-    color: #fff;
+    border-top: 3px solid var(--primary-color);
+    color: var(--light-color);
     text-shadow: 1px 1px 1px #333;
 }
