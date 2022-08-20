@@ -1,0 +1,39 @@
+.header {
+  position: relative;
+  background: url("../../public/images/Clinica-sala-de-espera.jpg") no-repeat center
+    center/cover;
+  height: 60vh;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  inset: 0;
+  z-index: -10;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+  align-items: center;
+}
+
+.title {
+  margin: 0 5%;
+  width: 50%;
+  line-height: 1.15;
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--dark-color);
+  text-shadow: 2px 2px 4px #aaa;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h1 {
+  font-weight: 100;
+}

@@ -2,11 +2,12 @@ import Head from "next/head";
 import Image from "next/image";
 import { Fragment } from "react";
 
-import Navbar from "../components/Navbar";
-import Infos from "../components/Infos";
-import Description from "../components/Description";
+import HomeHeader from "../components/Home/HomeHeader";
+import Infos from "../components/Home/Infos";
+import Description from "../components/Home/Description";
+import Tratamentos from "../components/Home/Tratamentos";
 
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Home/Home.module.css";
 
 export default function Home() {
   return (
@@ -17,21 +18,14 @@ export default function Home() {
           name="description"
           content="Clínica odontológica multidisciplinar especializada - atendemos todas as especialidades com o mais alto rigor técnico e as últimas tecnologias disponíveis no mercado."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/favicon.ico" />
       </Head>
 
-      <header className={styles.header}>
-        <div className={styles.overlay} />
-        <Navbar />
-        <div className={styles["header-content"]}>
-          <h1 className={styles.title}>
-            Deus da dente <br />pra quem nao precisa.
-          </h1>
-        </div>
-      </header>
+      <HomeHeader />
       <main className={styles.main}>
         <Infos />
         <Description />
+        <Tratamentos />
       </main>
 
       <footer className={styles.footer}>

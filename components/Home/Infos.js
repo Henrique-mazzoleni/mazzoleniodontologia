@@ -1,4 +1,4 @@
-import styles from "../styles/Infos.module.css";
+import styles from "../../styles/Home/Infos.module.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

@@ -1,18 +1,16 @@
 import Image from "next/image";
 
-import styles from "../styles/Description.module.css";
+import styles from "../../styles/Home/Description.module.css";
 
 export default function Description() {
   return (
     <section className={styles.description}>
       <div className={styles.image}>
         <Image
-          src="/Equipo.jpg"
+          src="/images/Equipo.jpg"
           alt="Picture of the treatment room and dental equipment"
           placeholder="empty"
           layout="fill"
-          width={2048}
-          height={1365}
           objectFit="cover"
         />
         <div className={styles.overlay}></div>
