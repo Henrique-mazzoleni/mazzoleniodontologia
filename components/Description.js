@@ -15,6 +15,7 @@ export default function Description() {
           height={1365}
           objectFit="cover"
         />
+        <div className={styles.overlay}></div>
       </div>
       <div className={styles.text}>
         <p>

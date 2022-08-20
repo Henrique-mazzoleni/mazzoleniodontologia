@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     height: 400px;
-    /* width: 100%; */
+    max-width: 1220px;
 }
 
 .description > * {
@@ -15,8 +15,16 @@
     width: 50vw;
 }
 
+.overlay {
+    position: absolute;
+    background-image: linear-gradient(to right, transparent, #fff);
+    inset: 0;
+    z-index: 100;
+}
+
 .text {
     padding: 20px;
+    text-align: center;
 }
 
 .text p {
