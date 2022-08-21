@@ -1,10 +1,21 @@
+.wrapper {
+    height: 300px;
+    background-color: #aaa;
+    
+}
+
 .footer {
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: #aaa;
-  height: 300px;
-  padding: 2rem 0;
+  justify-content: space-between;
+  height: 100%;
+  width: 1220px;
+  margin: auto;
+  padding: 2rem 2rem;
+}
+
+.footer > * {
+    /* flex: 1; */
 }
 
 .footer a {
@@ -15,11 +26,17 @@
 }
 
 .logo {
+  align-self: flex-start;
   position: relative;
-  height: 100%;
+  top: 15px;
+  left: 15px;
+  height: 80%;
+  width: 20%;
 }
 
 .links {
     display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
     gap: 10px;
 }
