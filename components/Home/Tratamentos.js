@@ -11,6 +11,7 @@ const ListaTratamentos = [
   "Endodontia",
   "Facetas em Porcelana",
   "Implantodontia",
+  "Ortodontia",
 ];
 
 const TratamentoCartao = (props) => {

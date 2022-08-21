@@ -1,8 +1,9 @@
 .navbar {
     position: relative;
-    left: 0;
-    right: 0;
-    top: 0;
+    /* left: 0; */
+    /* right: 0; */
+    /* top: 0; */
+    margin: 0 5%;
     height: 20%;
     z-index: 10;
     color: var(--primary-color);
