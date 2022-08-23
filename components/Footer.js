@@ -23,7 +23,27 @@ export default function Footer() {
             objectPosition="top center"
           />
         </div>
-        <div className={styles.pages}></div>
+        <ul className={styles.pages}>
+          <h3>Páginas</h3>
+          <li>> Home</li>
+          <li>> A Clínica</li>
+          <li>> Noticias</li>
+          <li>> Contato</li>
+        </ul>
+        <div className={styles.endereco}>
+          <h3>Endereço</h3>
+          <p>
+            Av. Moema 170 cj.154
+            <br />
+            Planalto Paulista - São Paulo - SP
+            <br />
+            Telefone: 11 3499-0490
+            <br />
+            Celular: 11 95000-2799
+            <br />
+            Email: mazzoleni.odontologia@gmail.com
+          </p>
+        </div>
         <div className={styles.links}>
           <a
             href="https://www.facebook.com/Mazzoleni-Odontologia-100229098203417/?ref=page_internal"
