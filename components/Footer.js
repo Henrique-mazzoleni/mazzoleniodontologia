@@ -25,10 +25,10 @@ export default function Footer() {
         </div>
         <ul className={styles.pages}>
           <h3>Páginas</h3>
-          <li>> Home</li>
-          <li>> A Clínica</li>
-          <li>> Noticias</li>
-          <li>> Contato</li>
+          <li>&gt; Home</li>
+          <li>&gt; A Clínica</li>
+          <li>&gt; Noticias</li>
+          <li>&gt; Contato</li>
         </ul>
         <div className={styles.endereco}>
           <h3>Endereço</h3>
