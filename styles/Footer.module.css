@@ -1,6 +1,6 @@
 .wrapper {
-    height: 350px;
-    background-color: #aaa;
+  height: 350px;
+  background-color: #aaa;
 }
 
 .footer {
@@ -9,7 +9,7 @@
   height: 100%;
   max-width: 1220px;
   margin: auto;
-  padding: 2rem 2rem;
+  padding: 2rem 0;
   gap: 50px;
 }
 
@@ -45,22 +45,23 @@
 
 .pages li:hover {
   color: #ccc;
-  
 }
 
 .endereco {
-  flex: 3;
+  flex: 2;
 }
 
 .endereco p {
-  line-height: 1.5;
+  margin-top: 25px;
+  font-weight: 300;
+  line-height: 1.8;
   text-align: justify;
 }
 
 .links {
-    flex: 1;
-    display: flex;
-    align-self: flex-end;
-    justify-content: flex-end;
-    gap: 10px;
+  flex: 1;
+  display: flex;
+  align-self: flex-end;
+  justify-content: flex-end;
+  gap: 10px;
 }

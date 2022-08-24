@@ -5,6 +5,7 @@ import HomeHeader from "../components/Home/HomeHeader";
 import Infos from "../components/Home/Infos";
 import Description from "../components/Home/Description";
 import Tratamentos from "../components/Home/Tratamentos";
+import Depoimentos from "../components/Home/Depoimentos";
 import Footer from "../components/Footer";
 
 import styles from "../styles/Home/Home.module.css";
@@ -22,6 +23,7 @@ export default function Home() {
         <Infos />
         <Description />
         <Tratamentos />
+        <Depoimentos />
       </main>
 
       <Footer />
