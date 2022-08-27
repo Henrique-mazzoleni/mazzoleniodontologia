@@ -1,7 +1,7 @@
 .tratamentos {
     max-width: 1220px;
     color: var(--primary-color);
-    margin: 30px;
+    margin: 50px auto;
 }
 
 .tratamentos h2 {
@@ -16,6 +16,7 @@
     justify-content: space-around;
     gap: 15px;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .card {
