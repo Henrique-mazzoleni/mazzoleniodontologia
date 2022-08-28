@@ -1,12 +1,19 @@
-.navbar {
+.navbar-top {
     position: relative;
-    /* left: 0; */
-    /* right: 0; */
-    /* top: 0; */
+    margin: auto;
     margin: 0 5%;
-    height: 20%;
     z-index: 10;
+    height: 20%;
     color: var(--primary-color);
+}
+
+.navbar-scroll {
+    position: fixed;
+    background-color: var(--light-background);
+    color: var(--dark-color);
+    height: 50px;
+    width: 100vw;
+    z-index: 1000;
 }
 
 .content {
@@ -14,15 +21,35 @@
     justify-content: space-between;
     background-color: rgba(0,0,0,0);
     text-shadow: 1px 1px 1px #ddd;
-    min-height: 100px;
-    max-width: 1220px;
+    height: 100%;
+    max-width: 940px;
     margin: auto;
 }
 
 .logo {
+    flex: 0.35;
+    position: relative;
+    height: 150%;
+    border: 1px solid transparent;
+    border-radius: 100px;
+    margin-top: 20px;
+    margin-left: 40px;
+    overflow: hidden;
+}
+
+.logo-text {
+    flex: 1;
     display: flex;
     align-items: center;
-    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-text h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
 }
 
 .links {
