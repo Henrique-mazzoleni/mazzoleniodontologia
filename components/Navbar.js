@@ -42,7 +42,7 @@ export default function Navbar() {
     return () => {
       window.removeEventListener("scroll", scrollHandler);
     };
-  }, []);
+  }, [scrollHandler]);
 
   return (
     <nav className={navClass}>

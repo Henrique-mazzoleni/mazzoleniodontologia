@@ -28,7 +28,7 @@ const Depoimento = (props) => {
   return (
     <div className={styles.depoimento}>
       <div className={styles["image-wrapper"]}>
-        <Image src={props.source} layout="fill" objectFit="cover" />
+        <Image src={props.source} alt={props.autor} layout="fill" objectFit="cover" />
       </div>
       <div className={styles["text-box"]}>
         <p>{props.depoimento}</p>
