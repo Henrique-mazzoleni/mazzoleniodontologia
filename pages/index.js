@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 
 import HeadComponent from "../components/HeadComponent";
+import Navbar from "../components/Navbar";
 import HomeHeader from "../components/Home/HomeHeader";
 import Infos from "../components/Home/Infos";
 import Description from "../components/Home/Description";
@@ -17,7 +18,8 @@ export default function Home() {
         title="Home"
         content="Clínica odontológica multidisciplinar especializada - atendemos todas as especialidades com o mais alto rigor técnico e as últimas tecnologias disponíveis no mercado."
       />
-
+      
+      <Navbar />
       <HomeHeader />
       <main className={styles.main}>
         <Infos />

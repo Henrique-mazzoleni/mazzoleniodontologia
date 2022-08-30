@@ -1,15 +1,14 @@
 .navbar-top {
-    position: relative;
-    margin: auto;
-    margin: 0 5%;
-    z-index: 10;
-    height: 20%;
+    position: fixed;
+    height: 120px;
+    width: 100%;
     color: var(--primary-color);
+    z-index: 1000;
 }
 
 .navbar-scroll {
     position: fixed;
-    background-color: var(--light-background);
+    background-color: #eee;
     color: var(--dark-color);
     height: 50px;
     width: 100vw;

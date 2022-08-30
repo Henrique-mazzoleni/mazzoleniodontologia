@@ -3,7 +3,7 @@
   background: url("../../public/images/Clinica-sala-de-espera.jpg") no-repeat center
     center/cover;
   height: 60vh;
-  z-index: 100;
+  z-index: 10;
 }
 
 .overlay {
@@ -19,6 +19,7 @@
   height: 80%;
   max-width: 940px;
   margin: auto;
+  padding-top: 150px;
   align-items: center;
 }
 
