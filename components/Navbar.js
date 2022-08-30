@@ -25,15 +25,15 @@ export default function Navbar() {
   );
 
   const [logo, setLogo] = useState(image);
-  const [navClass, setNavClass] = useState(styles['navbar-top'])
+  const [navClass, setNavClass] = useState(`${styles['navbar-top']} ${styles.navbar}`)
 
   const scrollHandler = () => {
     if (window.pageYOffset === 0) {
       setLogo(image);
-      setNavClass(styles['navbar-top'])
+      setNavClass(`${styles['navbar-top']} ${styles.navbar}`)
     } else {
       setLogo(text);
-      setNavClass(styles['navbar-scroll'])
+      setNavClass(`${styles['navbar-scroll']} ${styles.navbar}`)
     }
   };
 

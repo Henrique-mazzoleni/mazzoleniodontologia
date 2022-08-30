@@ -1,18 +1,19 @@
-.navbar-top {
-    position: fixed;
-    height: 120px;
+.navbar {
+    position:fixed;
     width: 100%;
-    color: var(--primary-color);
     z-index: 1000;
+    color: var(--primary-color);
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar-top {
+    height: 120px;
+    background-color: transparent;
 }
 
 .navbar-scroll {
-    position: fixed;
-    background-color: #eee;
-    color: var(--dark-color);
     height: 50px;
-    width: 100vw;
-    z-index: 1000;
+    background-color: #eee;
 }
 
 .content {
