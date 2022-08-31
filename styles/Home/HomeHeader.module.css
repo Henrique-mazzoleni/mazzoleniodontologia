@@ -8,7 +8,7 @@
 
 .overlay {
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   inset: 0;
   z-index: -10;
 }
@@ -29,8 +29,8 @@
   line-height: 1.15;
   font-size: 3rem;
   font-weight: 300;
-  color: var(--dark-color);
-  text-shadow: 2px 2px 4px #aaa;
+  color: var(--light-color);
+  /* text-shadow: 2px 2px 4px #aaa; */
 }
 
 .title {

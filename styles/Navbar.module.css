@@ -2,39 +2,44 @@
     position:fixed;
     width: 100%;
     z-index: 1000;
-    color: var(--primary-color);
     transition: all 0.5s ease-in-out;
 }
 
 .navbar-top {
+    color: var(--light-color);
     height: 120px;
     background-color: transparent;
 }
 
 .navbar-scroll {
+    color: var(--dark-color);
     height: 50px;
-    background-color: #eee;
+    background-color: #ccc;
 }
 
 .content {
     display: flex;
     justify-content: space-between;
     background-color: rgba(0,0,0,0);
-    text-shadow: 1px 1px 1px #ddd;
+    /* text-shadow: 1px 1px 1px #ddd; */
+    font-size: 1.2rem;
+    font-weight: 500;
     height: 100%;
     max-width: 940px;
     margin: auto;
 }
 
 .logo {
-    flex: 0.35;
+    flex: 0.4;
     position: relative;
-    height: 150%;
+    height: 150px;
+    opacity: 1;
     border: 1px solid transparent;
     border-radius: 100px;
     margin-top: 20px;
     margin-left: 40px;
     overflow: hidden;
+    transition: opacity 1s ease-in-out;
 }
 
 .logo-text {

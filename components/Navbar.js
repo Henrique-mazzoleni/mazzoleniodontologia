@@ -14,26 +14,27 @@ export default function Navbar() {
         layout="fill"
         objectFit="cover"
         objectPosition="top center"
-      />
+        />
     </div>
   );
-
+  
   const text = (
     <div className={styles["logo-text"]}>
       <h3>Mazzoleni Odontologia</h3>
     </div>
   );
-
-  const [logo, setLogo] = useState(image);
+  
   const [navClass, setNavClass] = useState(`${styles['navbar-top']} ${styles.navbar}`)
+  const [logo, setLogo] = useState(image);
+  
 
   const scrollHandler = () => {
     if (window.pageYOffset === 0) {
-      setLogo(image);
       setNavClass(`${styles['navbar-top']} ${styles.navbar}`)
+      setLogo(image);
     } else {
-      setLogo(text);
       setNavClass(`${styles['navbar-scroll']} ${styles.navbar}`)
+      setLogo(text);
     }
   };
 
