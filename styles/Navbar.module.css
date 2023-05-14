@@ -2,7 +2,7 @@
     position:fixed;
     width: 100%;
     z-index: 1000;
-    transition: all 0.5s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .navbar-top {
@@ -13,33 +13,40 @@
 
 .navbar-scroll {
     color: var(--dark-color);
-    height: 50px;
-    background-color: #ccc;
+    height: 70px;
+    background-color: #eee;
 }
 
 .content {
     display: flex;
     justify-content: space-between;
-    background-color: rgba(0,0,0,0);
-    /* text-shadow: 1px 1px 1px #ddd; */
     font-size: 1.2rem;
     font-weight: 500;
-    height: 100%;
     max-width: 940px;
+    height: 100%;
     margin: auto;
+}
+
+.menu-dropdown {
+    align-items: center;
+    height: 170px;
+    background-color: #eee;
+    margin-top: -20px;
+    padding: 10px;
+}
+
+.menu-dropdown li {
+    margin-top: 5px;
 }
 
 .logo {
     flex: 0.4;
     position: relative;
     height: 150px;
-    opacity: 1;
-    border: 1px solid transparent;
     border-radius: 100px;
     margin-top: 20px;
     margin-left: 40px;
     overflow: hidden;
-    transition: opacity 1s ease-in-out;
 }
 
 .logo-text {
@@ -53,12 +60,24 @@
 .logo-text h3 {
     font-size: 1.5rem;
     font-weight: 300;
-    margin: 0;
+    margin: 0 15px;
     padding: 0;
+}
+
+.menu-icon {
+    margin: 15px
 }
 
 .links {
     display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.links-column {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     list-style: none;

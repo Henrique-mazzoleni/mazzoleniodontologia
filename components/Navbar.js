@@ -2,9 +2,20 @@ import Link from "next/link";
 import Image from "next/image";
 
 import styles from "../styles/Navbar.module.css";
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
+import useWindowSize from "../hooks/useWindowSize";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
+  const { width } = useWindowSize();
+  const [mobileMode, setMobileMode] = useState(width < 430);
+
+  useEffect(() => {
+    setMobileMode(width < 430);
+  }, [width]);
+
   const image = (
     <div className={styles.logo}>
       <Image
@@ -14,26 +25,48 @@ export default function Navbar() {
         layout="fill"
         objectFit="cover"
         objectPosition="top center"
-        />
+      />
     </div>
   );
-  
+
   const text = (
     <div className={styles["logo-text"]}>
       <h3>Mazzoleni Odontologia</h3>
     </div>
   );
-  
-  const [navClass, setNavClass] = useState(`${styles['navbar-top']} ${styles.navbar}`)
+
+  const menu = (
+    <Fragment>
+      <li><Link href="/">Home</Link></li>
+      <li><Link href="/">Sobre</Link></li>
+      <li><Link href="/">Tratementos</Link></li>
+      <li><Link href="/">Noticias</Link></li>
+      <li><Link href="/">Contatos</Link></li>
+    </Fragment>
+  );
+
+  const [navDeskClass, setNavDeskClass] = useState(
+    `${styles["navbar-top"]} ${styles.navbar}`
+  );
   const [logo, setLogo] = useState(image);
-  
+  const [showLinks, setShowLinks] = useState(false);
+
+  const toggleMenuHandler = () => {
+    setShowLinks((state) => !state);
+  };
+
+  const menuLogo = (
+    <div className={styles["menu-icon"]} onClick={toggleMenuHandler}>
+      <FontAwesomeIcon icon={faBars} size="2x" />
+    </div>
+  );
 
   const scrollHandler = () => {
-    if (window.pageYOffset === 0) {
-      setNavClass(`${styles['navbar-top']} ${styles.navbar}`)
+    if (window.scrollY === 0 && !mobileMode) {
+      setNavDeskClass(`${styles["navbar-top"]} ${styles.navbar}`);
       setLogo(image);
     } else {
-      setNavClass(`${styles['navbar-scroll']} ${styles.navbar}`)
+      setNavDeskClass(`${styles["navbar-scroll"]} ${styles.navbar}`);
       setLogo(text);
     }
   };
@@ -46,27 +79,17 @@ export default function Navbar() {
   }, [scrollHandler]);
 
   return (
-    <nav className={navClass}>
-      <div className={styles.content}>
+    <nav className={navDeskClass}>
+      <div className={`${styles.content} ${styles["menu-fixed"]}`}>
         {logo}
-        <ul className={styles.links}>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/">Sobre</Link>
-          </li>
-          <li>
-            <Link href="/">Tratementos</Link>
-          </li>
-          <li>
-            <Link href="/">Noticias</Link>
-          </li>
-          <li>
-            <Link href="/">Contatos</Link>
-          </li>
-        </ul>
+        {mobileMode && menuLogo}
+        {!mobileMode && <ul className={styles.links}>{menu}</ul>}
       </div>
+      {showLinks && mobileMode && (
+        <div className={`${styles.content} ${styles["menu-dropdown"]}`}>
+          <ul className={styles["links-column"]}>{menu}</ul>
+        </div>
+      )}
     </nav>
   );
 }

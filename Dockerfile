@@ -7,6 +7,7 @@ RUN npm ci
 COPY next.config.js ./next.config.js
 
 COPY components ./components
+COPY hooks ./hooks
 COPY pages ./pages
 COPY public ./public
 COPY styles ./styles
