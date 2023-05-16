@@ -8,6 +8,25 @@ import useWindowSize from "../hooks/useWindowSize";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
+const image = (
+  <div className={styles.logo}>
+    <Image
+      src="/images/Mazzoleni_logo.jpg"
+      alt="Mazzoleni Logo"
+      placeholder="empty"
+      layout="fill"
+      objectFit="cover"
+      objectPosition="top center"
+    />
+  </div>
+);
+
+const text = (
+  <div className={styles["logo-text"]}>
+    <h3>Mazzoleni Odontologia</h3>
+  </div>
+);
+
 export default function Navbar() {
   const { width } = useWindowSize();
   const [mobileMode, setMobileMode] = useState(width < 430);
@@ -15,25 +34,6 @@ export default function Navbar() {
   useEffect(() => {
     setMobileMode(width < 430);
   }, [width]);
-
-  const image = (
-    <div className={styles.logo}>
-      <Image
-        src="/images/Mazzoleni_logo.jpg"
-        alt="Mazzoleni Logo"
-        placeholder="empty"
-        layout="fill"
-        objectFit="cover"
-        objectPosition="top center"
-      />
-    </div>
-  );
-
-  const text = (
-    <div className={styles["logo-text"]}>
-      <h3>Mazzoleni Odontologia</h3>
-    </div>
-  );
 
   const menu = (
     <Fragment>
@@ -60,23 +60,23 @@ export default function Navbar() {
       <FontAwesomeIcon icon={faBars} size="2x" />
     </div>
   );
-
-  const scrollHandler = () => {
-    if (window.scrollY === 0 && !mobileMode) {
-      setNavDeskClass(`${styles["navbar-top"]} ${styles.navbar}`);
-      setLogo(image);
-    } else {
-      setNavDeskClass(`${styles["navbar-scroll"]} ${styles.navbar}`);
-      setLogo(text);
-    }
-  };
-
+  
   useEffect(() => {
+    const scrollHandler = () => {
+      if (window.scrollY === 0 && !mobileMode) {
+        setNavDeskClass(`${styles["navbar-top"]} ${styles.navbar}`);
+        setLogo(image);
+      } else {
+        setNavDeskClass(`${styles["navbar-scroll"]} ${styles.navbar}`);
+        setLogo(text);
+      }
+    };
+
     window.addEventListener("scroll", scrollHandler);
     return () => {
       window.removeEventListener("scroll", scrollHandler);
     };
-  }, [scrollHandler]);
+  }, [mobileMode]);
 
   return (
     <nav className={navDeskClass}>
