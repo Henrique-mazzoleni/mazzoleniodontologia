@@ -1,19 +1,18 @@
-.header {
-  position: relative;
-  background: url("../../public/images/Clinica-sala-de-espera.jpg") no-repeat center
-    center/cover;
-  height: 600px;
-  z-index: 10;
+.header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("../../public/images/Clinica-sala-de-espera.jpg") no-repeat center center/cover;
+  filter: brightness(0.7);
 }
 
-.overlay {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.3);
-  inset: 0;
-  z-index: -10;
+.header {
+  position: relative;
+  height: 600px;
 }
 
 .header-content {
+  position: relative;
   display: flex;
   flex-direction: row;
   height: 80%;

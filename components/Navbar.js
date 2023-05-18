@@ -38,7 +38,7 @@ export default function Navbar() {
   const menu = (
     <Fragment>
       <li><Link href="/">Home</Link></li>
-      <li><Link href="/">Sobre</Link></li>
+      <li><Link href="/sobre">Sobre</Link></li>
       <li><Link href="/">Tratementos</Link></li>
       <li><Link href="/">Noticias</Link></li>
       <li><Link href="/">Contatos</Link></li>
