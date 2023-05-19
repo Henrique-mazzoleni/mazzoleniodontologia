@@ -1,7 +1,7 @@
 .description {
     display: flex;
     align-items: center;
-    height: 400px;
+    height: 500px;
     max-width: 1220px;
 }
 
@@ -12,7 +12,8 @@
     width: 50vw;
 }
 
-.overlay {
+.image::after {
+    content: '';
     position: absolute;
     background-image: linear-gradient(to right, transparent, #fff);
     inset: 0;
@@ -26,6 +27,7 @@
 }
 
 .text p {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     color: var(--primary-color);
+    margin-bottom: 5px;
 }

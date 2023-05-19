@@ -1,0 +1,15 @@
+.header {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    height: 350px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header h1 {
+    width: 940px;
+    margin: 50px;
+    font-weight: 100;
+    font-size: 4rem;
+}

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -25,8 +26,8 @@ export default function Footer() {
         </div>
         <ul className={styles.pages}>
           <h3>Páginas</h3>
-          <li>&gt; Home</li>
-          <li>&gt; A Clínica</li>
+          <Link href="/"><li>&gt; Home</li></Link>
+          <Link href="/sobre"><li>&gt; A Clínica</li></Link>
           <li>&gt; Noticias</li>
           <li>&gt; Contato</li>
         </ul>
