@@ -2,8 +2,8 @@ import { Fragment } from "react";
 
 import HeadComponent from "../components/HeadComponent";
 import Navbar from "../components/Navbar";
-import HomeHeader from "../components/Home/HomeHeader";
 import Description from "../components/Description";
+import HomeHeader from "../components/Home/HomeHeader";
 import Infos from "../components/Home/Infos";
 import Tratamentos from "../components/Home/Tratamentos";
 import Depoimentos from "../components/Home/Depoimentos";

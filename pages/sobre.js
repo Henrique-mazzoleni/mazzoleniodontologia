@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import styles from "../styles/Sobre/Sobre.module.css";
 import Header from "../components/Header";
 import Description from "../components/Description";
+import Diferenciais from "../components/Sobre/Diferenciais";
 
 export default function Sobre() {
   return (
@@ -26,6 +27,7 @@ export default function Sobre() {
             "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi commodi, facere hic earum enim officia sunt quis ipsam harum architecto minima facilis sequi tempore reiciendis recusandae explicabo doloremque alias provident debitis saepe, ipsa neque, dolorum veritatis. Autem, porro asperiores voluptates, optio sequi, ab aperiam quod officiis ipsam quidem ea deleniti.",
           ]}
         />
+        <Diferenciais />
       </main>
       <Footer />
     </Fragment>

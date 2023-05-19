@@ -1,6 +1,7 @@
+import IconCard from "../UI/IconCard";
+
 import styles from "../../styles/Home/Tratamentos.module.css";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTooth } from "@fortawesome/free-solid-svg-icons";
 
 const ListaTratamentos = [
@@ -38,22 +39,13 @@ const ListaTratamentos = [
   },
 ];
 
-const TratamentoCartao = (props) => {
-  return (
-    <div className={styles.card}>
-      <FontAwesomeIcon icon={faTooth} size="2x" />
-      <h3>{props.tratamento}</h3>
-    </div>
-  );
-};
-
 export default function Tratamentos() {
   return (
     <section className={styles.tratamentos}>
       <h2>Nossos Tratamentos</h2>
       <div className={styles.display}>
         {ListaTratamentos.map((tratamento) => (
-          <TratamentoCartao key={tratamento.id} tratamento={tratamento.nome} />
+          <IconCard key={tratamento.id} titulo={tratamento.nome} icon={faTooth}/>
         ))}
       </div>
     </section>

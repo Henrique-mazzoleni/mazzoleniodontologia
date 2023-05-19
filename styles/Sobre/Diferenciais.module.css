@@ -1,10 +1,10 @@
-.tratamentos {
+.diferenciais {
     max-width: 1220px;
     color: var(--primary-color);
     margin: 50px auto;
 }
 
-.tratamentos h2 {
+.diferenciais h2 {
     text-align: center;
     font-weight:500;
     margin-bottom: 40px;
@@ -18,4 +18,3 @@
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
-
