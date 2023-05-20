@@ -8,6 +8,7 @@ import Header from "../components/Header";
 import Description from "../components/Description";
 import Citacao from "../components/Citacao";
 import Diferenciais from "../components/Sobre/Diferenciais";
+import Galeria from "../components/Sobre/Galeria";
 
 export default function Sobre() {
   return (
@@ -32,6 +33,7 @@ export default function Sobre() {
         <Citacao 
           texto="Ambiente agradável e salas equipadas com tecnologia de ponta"
         />
+        <Galeria />
       </main>
       <Footer />
     </Fragment>

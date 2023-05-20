@@ -1,0 +1,59 @@
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    min-height: 500px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 0;
+
+}
+
+.imgCard {
+    position: relative;  
+    height: 270px;
+    width: 380px;
+}
+
+.imgCard:hover img {
+    transition: transform .5s;
+    transform: scale(1.1);
+}
+
+.foto-overlay {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    inset: 0;
+    z-index: 15;
+    background-color: var(--light-color);
+}
+
+.img-overlay-card {
+    position: absolute;
+    inset: 0;
+    margin: 100px;
+    z-index: 20;
+}
+
+.foto-overlay svg:hover {
+    transform: scale(1.5);
+    transition: transform 0.5s;
+}
+
+.change-btn {
+    border: none;
+    width: 100px;
+    height: 100%;
+}
+
+.close-btn {
+    position: absolute;
+    border: none;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+}

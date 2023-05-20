@@ -53,15 +53,12 @@
     flex: 1;
     display: flex;
     align-items: center;
-    margin: 0;
-    padding: 0;
 }
 
 .logo-text h3 {
     font-size: 1.5rem;
     font-weight: 300;
     margin: 0 15px;
-    padding: 0;
 }
 
 .menu-icon {
@@ -70,16 +67,12 @@
 
 .links {
     display: flex;
-    margin: 0;
-    padding: 0;
     list-style: none;
 }
 
 .links-column {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
     list-style: none;
 }
 
