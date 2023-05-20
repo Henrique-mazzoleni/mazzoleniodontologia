@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import styles from "../styles/Sobre/Sobre.module.css";
 import Header from "../components/Header";
 import Description from "../components/Description";
+import Citacao from "../components/Citacao";
 import Diferenciais from "../components/Sobre/Diferenciais";
 
 export default function Sobre() {
@@ -28,6 +29,9 @@ export default function Sobre() {
           ]}
         />
         <Diferenciais />
+        <Citacao 
+          texto="Ambiente agradável e salas equipadas com tecnologia de ponta"
+        />
       </main>
       <Footer />
     </Fragment>

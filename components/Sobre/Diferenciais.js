@@ -29,7 +29,7 @@ export default function Diferenciais() {
       icone: faSun,
     },
     {
-      titulo: "Atendimento trilíngue (português, inglês e espanhol)",
+      titulo: "Atendimento bilíngue (português e inglês)",
       icone: faEarthAmericas,
     },
   ];
