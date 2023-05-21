@@ -1,0 +1,27 @@
+.bio {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: auto;
+    padding: 50px;
+}
+
+.bio > * {
+    flex: 0 1 250px ;
+}
+
+.img-card {
+    position: relative  ;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-grow: 0;
+    box-shadow: 1px -1px 3px var(--light-color);
+}
+
+.bio p {
+    line-height: 1.3;
+}

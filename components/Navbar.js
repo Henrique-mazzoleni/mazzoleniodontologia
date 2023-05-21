@@ -13,7 +13,6 @@ const image = (
     <Image
       src="/images/Mazzoleni_logo.jpg"
       alt="Mazzoleni Logo"
-      placeholder="empty"
       layout="fill"
       objectFit="cover"
       objectPosition="top center"
