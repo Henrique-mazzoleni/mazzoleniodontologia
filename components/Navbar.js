@@ -30,18 +30,44 @@ const text = (
 export default function Navbar() {
   const { width } = useWindowSize();
   const [mobileMode, setMobileMode] = useState(width < 430);
+  const [showSobre, setShowSobre] = useState(false);
 
   useEffect(() => {
     setMobileMode(width < 430);
   }, [width]);
 
+  const showSobreHandler = () => {
+    setShowSobre((state) => !state);
+  };
+
   const menu = (
     <Fragment>
-      <li><Link href="/">Home</Link></li>
-      <li><Link href="/sobre">Sobre</Link></li>
-      <li><Link href="/">Tratementos</Link></li>
-      <li><Link href="/">Noticias</Link></li>
-      <li><Link href="/">Contatos</Link></li>
+      <li>
+        <Link href="/">Home</Link>
+      </li>
+      <li onMouseEnter={showSobreHandler} onMouseLeave={showSobreHandler}>
+        Sobre
+        {showSobre && (
+          <ul className={styles["drop-down-list"]}>
+            <span>Conheça a clínica</span>
+            <li>
+              <Link href="/sobre">A Clínica</Link>
+            </li>
+            <li>
+              <Link href="/profissionais">Profissionais</Link>
+            </li>
+          </ul>
+        )}
+      </li>
+      <li>
+        <Link href="/">Tratementos</Link>
+      </li>
+      <li>
+        <Link href="/">Noticias</Link>
+      </li>
+      <li>
+        <Link href="/">Contatos</Link>
+      </li>
     </Fragment>
   );
 
@@ -60,7 +86,7 @@ export default function Navbar() {
       <FontAwesomeIcon icon={faBars} size="2x" />
     </div>
   );
-  
+
   useEffect(() => {
     const scrollHandler = () => {
       if (window.scrollY === 0 && !mobileMode) {
