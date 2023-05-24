@@ -1,41 +1,36 @@
-import IconCard from "../UI/IconCard";
+import IconCard from '../UI/IconCard';
 
-import styles from "../../styles/Home/Tratamentos.module.css";
+import styles from '../../styles/Home/Tratamentos.module.css';
 
-import { faTooth } from "@fortawesome/free-solid-svg-icons";
+import { faTooth } from '@fortawesome/free-solid-svg-icons';
 
 const ListaTratamentos = [
   {
-    id: "1",
-    nome: "ATM",
+    tipo: 'Tratamento Estético',
+    tratamentos: [
+      'Laserterapia',
+      'Dentística Estética',
+      'Clareamento',
+      'Facetas em Porcelana',
+      'Implantodontia',
+      'Alinhadores Ortodônticos',
+      'Prótese Dentária',
+    ],
   },
   {
-    id: "2",
-    nome: "Check-up Digital",
+    tipo: 'Especialidades',
+    tratamentos: [
+      'ATM',
+      'Endodontia',
+      'Odontopediatria',
+      'Odontogeriatria',
+      'Periodontia',
+      'Ortodontia',
+    ],
   },
   {
-    id: "3",
-    nome: "Clareamento",
-  },
-  {
-    id: "4",
-    nome: "Dentística Estética",
-  },
-  {
-    id: "5",
-    nome: "Endodontia",
-  },
-  {
-    id: "6",
-    nome: "Facetas em Porcelana",
-  },
-  {
-    id: "7",
-    nome: "Implantodontia",
-  },
-  {
-    id: "8",
-    nome: "Ortodontia",
+    tipo: 'Prevenção',
+    tratamentos: ['Check-up Digital', 'Programa de Controle Preventivo'],
   },
 ];
 
@@ -43,11 +38,25 @@ export default function Tratamentos() {
   return (
     <section className={styles.tratamentos}>
       <h2>Nossos Tratamentos</h2>
-      <div className={styles.display}>
+      {ListaTratamentos.map((tipo) => (
+        <div key={tipo.tipo}>
+          <h3>{tipo.tipo}</h3>
+          <div className={styles.display}>
+            {tipo.tratamentos.map((tratamento, i) => (
+              <IconCard
+                key={`${tipo.tipo}_${i}`}
+                titulo={tratamento}
+                icon={faTooth}
+              />
+            ))}
+          </div>
+        </div>
+      ))}
+      {/* <div className={styles.display}>
         {ListaTratamentos.map((tratamento) => (
           <IconCard key={tratamento.id} titulo={tratamento.nome} icon={faTooth}/>
-        ))}
-      </div>
+        ))} */}
+      {/* </div> */}
     </section>
   );
 }

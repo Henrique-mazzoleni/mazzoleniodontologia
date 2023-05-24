@@ -6,7 +6,7 @@ export default function IconCard ({ icon, titulo }) {
     return (
       <div className={styles.card}>
         <FontAwesomeIcon icon={icon} size="2x" />
-        <h3>{titulo}</h3>
+        <h4>{titulo}</h4>
       </div>
     );
   };

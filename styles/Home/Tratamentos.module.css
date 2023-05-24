@@ -10,6 +10,11 @@
     margin-bottom: 40px;
 }
 
+.tratamentos h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .display {
     max-width: 900px;
     display: flex;

@@ -8,6 +8,36 @@ import useWindowSize from "../hooks/useWindowSize";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
+const listaTratamentos = [
+  {
+    tipo: 'Tratamento Estético',
+    tratamentos: [
+      'Laserterapia',
+      'Dentística Estética',
+      'Clareamento',
+      'Facetas em Porcelana',
+      'Implantodontia',
+      'Alinhadores Ortodônticos',
+      'Prótese Dentária',
+    ],
+  },
+  {
+    tipo: 'Especialidades',
+    tratamentos: [
+      'ATM',
+      'Endodontia',
+      'Odontopediatria',
+      'Odontogeriatria',
+      'Periodontia',
+      'Ortodontia',
+    ],
+  },
+  {
+    tipo: 'Prevenção',
+    tratamentos: ['Check-up Digital', 'Programa de Controle Preventivo'],
+  },
+];
+
 const image = (
   <div className={styles.logo}>
     <Image
@@ -21,7 +51,7 @@ const image = (
 );
 
 const text = (
-  <div className={styles["logo-text"]}>
+  <div className={styles['logo-text']}>
     <h3>Mazzoleni Odontologia</h3>
   </div>
 );
@@ -30,6 +60,7 @@ export default function Navbar() {
   const { width } = useWindowSize();
   const [mobileMode, setMobileMode] = useState(width < 430);
   const [showSobre, setShowSobre] = useState(false);
+  const [showTratamentos, setShowTratamentos] = useState(false);
 
   useEffect(() => {
     setMobileMode(width < 430);
@@ -37,6 +68,10 @@ export default function Navbar() {
 
   const showSobreHandler = () => {
     setShowSobre((state) => !state);
+  };
+
+  const showTratamentosHandler = () => {
+    setShowTratamentos((state) => !state);
   };
 
   const menu = (
@@ -47,7 +82,7 @@ export default function Navbar() {
       <li onMouseEnter={showSobreHandler} onMouseLeave={showSobreHandler}>
         Sobre
         {showSobre && (
-          <ul className={styles["drop-down-list"]}>
+          <ul className={styles['drop-down-list']}>
             <span>Conheça a clínica</span>
             <li>
               <Link href="/sobre">A Clínica</Link>
@@ -58,8 +93,27 @@ export default function Navbar() {
           </ul>
         )}
       </li>
-      <li>
-        <Link href="/">Tratementos</Link>
+      <li
+        onMouseEnter={showTratamentosHandler}
+        onMouseLeave={showTratamentosHandler}
+      >
+        Tratementos
+        {showTratamentos && (
+          <ul className={styles['drop-down-list']}>
+            {listaTratamentos.map((tipo, i) => (
+              <div key={`${tipo.tipo}_${i}`}>
+                <span>{tipo.tipo}</span>
+                <ul>
+                  {tipo.tratamentos.map((tratamento, i) => (
+                    <li key={i}>
+                      <Link href="/">{tratamento}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </ul>
+        )}
       </li>
       <li>
         <Link href="/">Noticias</Link>
@@ -71,7 +125,7 @@ export default function Navbar() {
   );
 
   const [navDeskClass, setNavDeskClass] = useState(
-    `${styles["navbar-top"]} ${styles.navbar}`
+    `${styles['navbar-top']} ${styles.navbar}`
   );
   const [logo, setLogo] = useState(image);
   const [showLinks, setShowLinks] = useState(false);
@@ -81,7 +135,7 @@ export default function Navbar() {
   };
 
   const menuLogo = (
-    <div className={styles["menu-icon"]} onClick={toggleMenuHandler}>
+    <div className={styles['menu-icon']} onClick={toggleMenuHandler}>
       <FontAwesomeIcon icon={faBars} size="2x" />
     </div>
   );
@@ -89,30 +143,30 @@ export default function Navbar() {
   useEffect(() => {
     const scrollHandler = () => {
       if (window.scrollY === 0 && !mobileMode) {
-        setNavDeskClass(`${styles["navbar-top"]} ${styles.navbar}`);
+        setNavDeskClass(`${styles['navbar-top']} ${styles.navbar}`);
         setLogo(image);
       } else {
-        setNavDeskClass(`${styles["navbar-scroll"]} ${styles.navbar}`);
+        setNavDeskClass(`${styles['navbar-scroll']} ${styles.navbar}`);
         setLogo(text);
       }
     };
 
-    window.addEventListener("scroll", scrollHandler);
+    window.addEventListener('scroll', scrollHandler);
     return () => {
-      window.removeEventListener("scroll", scrollHandler);
+      window.removeEventListener('scroll', scrollHandler);
     };
   }, [mobileMode]);
 
   return (
     <nav className={navDeskClass}>
-      <div className={`${styles.content} ${styles["menu-fixed"]}`}>
+      <div className={`${styles.content} ${styles['menu-fixed']}`}>
         {logo}
         {mobileMode && menuLogo}
         {!mobileMode && <ul className={styles.links}>{menu}</ul>}
       </div>
       {showLinks && mobileMode && (
-        <div className={`${styles.content} ${styles["menu-dropdown"]}`}>
-          <ul className={styles["links-column"]}>{menu}</ul>
+        <div className={`${styles.content} ${styles['menu-dropdown']}`}>
+          <ul className={styles['links-column']}>{menu}</ul>
         </div>
       )}
     </nav>
