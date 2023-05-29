@@ -1,42 +1,14 @@
-import Link from "next/link";
-import Image from "next/image";
+import Link from 'next/link';
+import Image from 'next/image';
 
-import styles from "../styles/Navbar.module.css";
-import { Fragment, useEffect, useState } from "react";
-import useWindowSize from "../hooks/useWindowSize";
+import styles from '../styles/Navbar.module.css';
+import { Fragment, useEffect, useState } from 'react';
+import useWindowSize from '../hooks/useWindowSize';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-const listaTratamentos = [
-  {
-    tipo: 'Tratamento Estético',
-    tratamentos: [
-      'Laserterapia',
-      'Dentística Estética',
-      'Clareamento',
-      'Facetas em Porcelana',
-      'Implantodontia',
-      'Alinhadores Ortodônticos',
-      'Prótese Dentária',
-    ],
-  },
-  {
-    tipo: 'Especialidades',
-    tratamentos: [
-      'ATM',
-      'Endodontia',
-      'Odontopediatria',
-      'Odontogeriatria',
-      'Periodontia',
-      'Ortodontia',
-    ],
-  },
-  {
-    tipo: 'Prevenção',
-    tratamentos: ['Check-up Digital', 'Programa de Controle Preventivo'],
-  },
-];
+import listaTratamentos from '../pages/api/data.json';
 
 const image = (
   <div className={styles.logo}>
@@ -100,13 +72,13 @@ export default function Navbar() {
         Tratementos
         {showTratamentos && (
           <ul className={styles['drop-down-list']}>
-            {listaTratamentos.map((tipo, i) => (
-              <div key={`${tipo.tipo}_${i}`}>
-                <span>{tipo.tipo}</span>
+            {listaTratamentos.map(({ tipo, tratamentos }, i) => (
+              <div key={`${tipo}_${i}`}>
+                <span>{tipo}</span>
                 <ul>
-                  {tipo.tratamentos.map((tratamento, i) => (
+                  {tratamentos.map(({ nome }, i) => (
                     <li key={i}>
-                      <Link href="/">{tratamento}</Link>
+                      <Link href={`/${nome}`}>{nome}</Link>
                     </li>
                   ))}
                 </ul>
