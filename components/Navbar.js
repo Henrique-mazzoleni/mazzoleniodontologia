@@ -91,7 +91,7 @@ export default function Navbar() {
         <Link href="/">Noticias</Link>
       </li>
       <li>
-        <Link href="/">Contatos</Link>
+        <Link href="/contato">Contatos</Link>
       </li>
     </Fragment>
   );

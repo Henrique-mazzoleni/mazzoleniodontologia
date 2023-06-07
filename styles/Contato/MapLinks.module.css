@@ -1,0 +1,12 @@
+.map-links {
+  display: flex;
+  height: 500px;
+}
+
+.map-links > * {
+  flex: 1;
+}
+
+.links {
+  background: var(--primary-color);
+}
