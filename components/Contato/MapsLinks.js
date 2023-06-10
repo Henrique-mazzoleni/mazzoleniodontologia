@@ -35,7 +35,9 @@ export default function MapLinks() {
         <div className={styles['link-rows']}>
           <button className={styles.btn}>
             <FontAwesomeIcon icon={faPhone} size="2x" />
-            <p>LIGAR PARA AGENDAR UM EXAME</p>
+            <p onClick={() => "window.location.href='tel:'11 3499-0490"}>
+              LIGAR PARA AGENDAR UM EXAME
+            </p>
           </button>
           <button className={styles.btn}>
             <FontAwesomeIcon icon={faBus} size="2x" />

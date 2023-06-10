@@ -10,7 +10,7 @@
 }
 
 .links {
-  background: var(--primary-color);
+  background: var(--dark-color);
   color: var(--light-color);
   display: flex;
   flex-direction: column;
@@ -18,12 +18,6 @@
   justify-content: center;
   gap: 30px;
 }
-
-/* .link-rows{
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-} */
 
 .row {
   display: flex;
@@ -38,6 +32,10 @@
   font-weight: 400;
 }
 
+.row:hover > * {
+  color: var(--primary-color);
+}
+
 .btn {
   display: flex;
   align-items: stretch;
@@ -46,11 +44,17 @@
   background-color: inherit;
   color: inherit;
   margin: 25px 0 ;
+  cursor: pointer;
 }
 
 .btn > * {
   padding: 10px;
   border: 1px solid var(--light-color);
+}
+
+.btn:hover > * {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
 .btn p {
