@@ -43,10 +43,16 @@ export default function MapLinks() {
               </p>
             </button>
           </Link>
-          <button className={styles.btn}>
-            <FontAwesomeIcon icon={faBus} size="2x" />
-            <p>ROTAS DE TRANSPORTE PÚBLICO</p>
-          </button>
+          <a
+            href="https://www.google.com/maps/dir//''/@-23.6043023,-46.7292401,12z/data=!4m9!4m8!1m0!1m5!1m1!1s0x94ce5a1077e46f6d:0xab4f2b7f2fb50a4a!2m2!1d-46.6591997!2d-23.604318!3e3?entry=ttu"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className={styles.btn}>
+              <FontAwesomeIcon icon={faBus} size="2x" />
+              <p>ROTAS DE TRANSPORTE PÚBLICO</p>
+            </button>
+          </a>
           <button className={styles.btn}>
             <FontAwesomeIcon icon={faRoute} size="2x" />
             <p>USE O WAZE ATÉ A CLÍNICA</p>
