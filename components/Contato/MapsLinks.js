@@ -7,9 +7,28 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
+import {
+  GoogleMap,
+  useLoadScript,
+  Marker,
+  InfoWindow,
+} from '@react-google-maps/api';
+
 import styles from '../../styles/Contato/MapLinks.module.css';
+import { useEffect, useState } from 'react';
 
 export default function MapLinks() {
+  const { isLoaded } = useLoadScript({
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_API_KEY,
+  });
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleOpen = () => setIsOpen((state) => !state);
+
+  useEffect(() => {
+    if (isLoaded) toggleOpen();
+  }, [isLoaded]);
+
   return (
     <section className={styles['map-links']}>
       <div className={styles.links}>
@@ -40,7 +59,28 @@ export default function MapLinks() {
           </div>
         </div>
       </div>
-      <div className={styles.map}></div>
+      <div className={styles.map}>
+        {isLoaded ? (
+          <GoogleMap
+            zoom={16}
+            center={{ lat: -23.60416, lng: -46.65907 }}
+            mapContainerClassName={styles['map-container']}
+          >
+            <Marker
+              position={{ lat: -23.60416, lng: -46.65907 }}
+              onClick={toggleOpen}
+            >
+              {isOpen && (
+                <InfoWindow onCloseClick={toggleOpen}>
+                  <h3>Clínica Mazzoleni Odontologia</h3>
+                </InfoWindow>
+              )}
+            </Marker>
+          </GoogleMap>
+        ) : (
+          <div>Loading... </div>
+        )}
+      </div>
     </section>
   );
 }

@@ -63,3 +63,12 @@
 .btn svg {
   flex: 0 0 40px;
 }
+
+.map {
+  height: 100%;
+}
+
+.map-container {
+  height: 100%;
+  width: 100%;
+}
