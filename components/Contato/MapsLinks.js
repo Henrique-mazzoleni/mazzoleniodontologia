@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -18,6 +19,18 @@ import {
 } from '@react-google-maps/api';
 
 import styles from '../../styles/Contato/MapLinks.module.css';
+
+// const logo = (
+//   <div className={styles.logo}>
+//     <Image
+//       src="/images/logo_icon.png"
+//       alt="Mazzoleni Logo"
+//       layout="fill"
+//       objectFit="cover"
+//       objectPosition="top center"
+//     />
+//   </div>
+// );
 
 export default function MapLinks() {
   const { isLoaded } = useLoadScript({
@@ -80,11 +93,14 @@ export default function MapLinks() {
           >
             <Marker
               position={{ lat: -23.60416, lng: -46.65907 }}
+              icon={require('../../public/images/logo_icon.ico')}
               onClick={toggleOpen}
             >
               {isOpen && (
                 <InfoWindow onCloseClick={toggleOpen}>
-                  <h3>Clínica Mazzoleni Odontologia</h3>
+                  <p>
+                    Av. Moema 170 cj.154 - Planalto Paulista - São Paulo - SP
+                  </p>
                 </InfoWindow>
               )}
             </Marker>

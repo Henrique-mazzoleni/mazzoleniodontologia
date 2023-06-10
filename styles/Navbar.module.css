@@ -12,7 +12,7 @@
 }
 
 .navbar-scroll {
-    height: 70px;
+    height: 80px;
     background-color: var(--dark-color);
 }
 
@@ -49,17 +49,19 @@
     overflow: hidden;
 }
 
-.logo-text {
+.logo-small {
     flex: 1;
-    display: flex;
+    position: relative;
+    height: 80px;
+    margin-top: 0px;
     align-items: center;
 }
 
-.logo-text h3 {
+/* .logo-text h3 {
     font-size: 1.5rem;
     font-weight: 300;
     margin: 0 15px;
-}
+} */
 
 .menu-icon {
     margin: 15px

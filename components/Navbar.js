@@ -10,10 +10,10 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 import listaTratamentos from '../pages/api/data.json';
 
-const image = (
+const logoImg = (
   <div className={styles.logo}>
     <Image
-      src="/images/Mazzoleni_logo.jpg"
+      src="/images/Mazzoleni_logo_dark_background_80.svg"
       alt="Mazzoleni Logo"
       layout="fill"
       objectFit="cover"
@@ -22,9 +22,15 @@ const image = (
   </div>
 );
 
-const text = (
-  <div className={styles['logo-text']}>
-    <h3>Mazzoleni Odontologia</h3>
+const logoSmallImg = (
+  <div className={styles['logo-small']}>
+    <Image
+      src="/images/Mazzoleni_logo_dark_background_small.svg"
+      alt="Mazzoleni Logo"
+      layout="fill"
+      objectFit="contain"
+      objectPosition="center center"
+    />
   </div>
 );
 
@@ -99,7 +105,7 @@ export default function Navbar() {
   const [navDeskClass, setNavDeskClass] = useState(
     `${styles['navbar-top']} ${styles.navbar}`
   );
-  const [logo, setLogo] = useState(image);
+  const [logo, setLogo] = useState(logoImg);
   const [showLinks, setShowLinks] = useState(false);
 
   const toggleMenuHandler = () => {
@@ -116,10 +122,10 @@ export default function Navbar() {
     const scrollHandler = () => {
       if (window.scrollY === 0 && !mobileMode) {
         setNavDeskClass(`${styles['navbar-top']} ${styles.navbar}`);
-        setLogo(image);
+        setLogo(logoImg);
       } else {
         setNavDeskClass(`${styles['navbar-scroll']} ${styles.navbar}`);
-        setLogo(text);
+        setLogo(logoSmallImg);
       }
     };
 

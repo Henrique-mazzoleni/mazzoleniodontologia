@@ -1,7 +1,7 @@
 .header {
     background-color: var(--dark-color);
     color: var(--light-color);
-    height: 350px;
+    height: 300px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
