@@ -1,3 +1,6 @@
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faClock,
@@ -15,7 +18,6 @@ import {
 } from '@react-google-maps/api';
 
 import styles from '../../styles/Contato/MapLinks.module.css';
-import { useEffect, useState } from 'react';
 
 export default function MapLinks() {
   const { isLoaded } = useLoadScript({
@@ -33,12 +35,14 @@ export default function MapLinks() {
     <section className={styles['map-links']}>
       <div className={styles.links}>
         <div className={styles['link-rows']}>
-          <button className={styles.btn}>
-            <FontAwesomeIcon icon={faPhone} size="2x" />
-            <p onClick={() => "window.location.href='tel:'11 3499-0490"}>
-              LIGAR PARA AGENDAR UM EXAME
-            </p>
-          </button>
+          <Link href="tel:11 3499-0490">
+            <button className={styles.btn}>
+              <FontAwesomeIcon icon={faPhone} size="2x" />
+              <p onClick={() => "window.location.href='tel:'11 3499-0490"}>
+                LIGAR PARA AGENDAR UM EXAME
+              </p>
+            </button>
+          </Link>
           <button className={styles.btn}>
             <FontAwesomeIcon icon={faBus} size="2x" />
             <p>ROTAS DE TRANSPORTE PÚBLICO</p>
