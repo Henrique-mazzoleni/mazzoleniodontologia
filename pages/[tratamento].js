@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import tratamentos from './api/data.json';
+import tratamentosData from './api/data.json';
 import Description from '../components/Description';
 
 export default function Tratamento({ tratamentos }) {
@@ -28,7 +28,7 @@ export default function Tratamento({ tratamentos }) {
 export function getStaticPaths() {
   return {
     fallback: false,
-    paths: tratamentos
+    paths: tratamentosData
       .map((tipo) => tipo.tratamentos)
       .flat()
       .map((obj) => ({
@@ -41,6 +41,6 @@ export function getStaticPaths() {
 
 export function getStaticProps() {
   return {
-    props: { tratamentos: tratamentos },
+    props: { tratamentos: tratamentosData },
   };
 }

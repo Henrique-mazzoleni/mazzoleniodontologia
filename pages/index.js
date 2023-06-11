@@ -10,6 +10,7 @@ import Depoimentos from "../components/Home/Depoimentos";
 import Footer from "../components/Footer";
 
 import styles from "../styles/Home/Home.module.css";
+import tratamentosData from './api/data.json';
 
 export default function Home() {
   return (
@@ -27,14 +28,20 @@ export default function Home() {
           imgSrc="/images/Equipo.jpg"
           imgAlt="Sala de atendimento com equipo"
           text={[
-            "Atendemos todas as especialidades com o mais alto rigor técnico e as últimas tecnologias disponíveis no mercado.",
+            'Atendemos todas as especialidades com o mais alto rigor técnico e as últimas tecnologias disponíveis no mercado.',
           ]}
         />
-        <Tratamentos />
+        <Tratamentos listaTratamentos={tratamentosData} />
         <Depoimentos />
       </main>
 
       <Footer />
     </Fragment>
   );
+}
+
+export function getStaticProps() {
+  return {
+    props: { tratamentosData },
+  };
 }
