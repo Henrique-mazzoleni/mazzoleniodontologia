@@ -59,7 +59,7 @@ export default function MapLinks() {
           <a
             href="https://www.google.com/maps/dir//''/@-23.6043023,-46.7292401,12z/data=!4m9!4m8!1m0!1m5!1m1!1s0x94ce5a1077e46f6d:0xab4f2b7f2fb50a4a!2m2!1d-46.6591997!2d-23.604318!3e3?entry=ttu"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             <button className={styles.btn}>
               <FontAwesomeIcon icon={faBus} size="2x" />
@@ -70,7 +70,7 @@ export default function MapLinks() {
             // href="https://waze.com/ul?ll=-23.60361299,-46.65980458&navigate=yes"
             href="https://www.waze.com/live-map/directions/sao-paulo/sao-paulo?navigate=yes&to=place.ws.row.10760007.170"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             <button className={styles.btn}>
               <FontAwesomeIcon icon={faRoute} size="2x" />
@@ -79,15 +79,30 @@ export default function MapLinks() {
           </a>
           <div className={styles.row}>
             <FontAwesomeIcon icon={faPhone} size="2x" />
-            <h4>Tel.: 11 3499-0490 / 11 95000-2799</h4>
+            <h4>
+              Tel.: <span>11 3499-0490 / 11 95000-2799</span>
+            </h4>
           </div>
           <div className={styles.row}>
             <FontAwesomeIcon icon={faWhatsapp} size="2x" />
-            <h4>Whatsapp: 11 95000-2799</h4>
+            <h4>
+              Whatsapp:{' '}
+              <span className={styles.whats}>
+                <a
+                  href="https://wa.me/5511950002799"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  11 95000-2799
+                </a>
+              </span>
+            </h4>
           </div>
           <div className={styles.row}>
             <FontAwesomeIcon icon={faClock} size="2x" />
-            <h4>Segunda-Sexta - 8:00-17:00</h4>
+            <h4>
+              <span>Segunda-Sexta - 8:00-17:00</span>
+            </h4>
           </div>
         </div>
       </div>

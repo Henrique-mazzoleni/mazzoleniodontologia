@@ -32,8 +32,12 @@
   font-weight: 400;
 }
 
-.row:hover > * {
+.row:hover h4 span {
   color: var(--primary-color);
+}
+
+.whats {
+  cursor: pointer;
 }
 
 .btn {
