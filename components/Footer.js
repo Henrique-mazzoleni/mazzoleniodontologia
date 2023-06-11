@@ -26,10 +26,16 @@ export default function Footer() {
         </div>
         <ul className={styles.pages}>
           <h3>Páginas</h3>
-          <Link href="/"><li>&gt; Home</li></Link>
-          <Link href="/sobre"><li>&gt; A Clínica</li></Link>
+          <Link href="/">
+            <li>&gt; Home</li>
+          </Link>
+          <Link href="/sobre">
+            <li>&gt; A Clínica</li>
+          </Link>
           <li>&gt; Noticias</li>
-          <li>&gt; Contato</li>
+          <Link href="/contato">
+            <li>&gt; Contato</li>
+          </Link>
         </ul>
         <div className={styles.endereco}>
           <h3>Endereço</h3>
