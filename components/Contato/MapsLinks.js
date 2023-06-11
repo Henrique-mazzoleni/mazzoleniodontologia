@@ -66,10 +66,17 @@ export default function MapLinks() {
               <p>ROTAS DE TRANSPORTE PÚBLICO</p>
             </button>
           </a>
-          <button className={styles.btn}>
-            <FontAwesomeIcon icon={faRoute} size="2x" />
-            <p>USE O WAZE ATÉ A CLÍNICA</p>
-          </button>
+          <a
+            // href="https://waze.com/ul?ll=-23.60361299,-46.65980458&navigate=yes"
+            href="https://www.waze.com/live-map/directions/sao-paulo/sao-paulo?navigate=yes&to=place.ws.row.10760007.170"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className={styles.btn}>
+              <FontAwesomeIcon icon={faRoute} size="2x" />
+              <p>USE O WAZE ATÉ A CLÍNICA</p>
+            </button>
+          </a>
           <div className={styles.row}>
             <FontAwesomeIcon icon={faPhone} size="2x" />
             <h4>Tel.: 11 3499-0490 / 11 95000-2799</h4>
