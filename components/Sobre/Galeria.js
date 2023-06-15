@@ -49,7 +49,7 @@ const FotoCard = ({ imgSrc, imgAlt, onAction }) => {
         src={imgSrc}
         alt={imgAlt}
         layout="fill"
-        objectFit="cover"
+        objectFit="scale-down"
         objectPosition="center center"
       />
     </div>
@@ -109,23 +109,23 @@ export default function Galeria() {
     );
 
   return (
-    <div className={styles["foto-overlay"]}>
-      <div className={styles["img-overlay-card"]}>
+    <div className={styles['foto-overlay']}>
+      <div className={styles['img-overlay-card']}>
         <Image
           src={fotoSelected.src}
           alt={fotoSelected.alt}
           layout="fill"
-          objectFit="cover"
+          objectFit="contain"
           objectPosition="center center"
         />
       </div>
-      <button className={styles["change-btn"]} onClick={prevFotoHandler}>
+      <button className={styles['change-btn']} onClick={prevFotoHandler}>
         <FontAwesomeIcon icon={faChevronLeft} size="3x" />
       </button>
-      <button className={styles["change-btn"]} onClick={nextFotoHandler}>
+      <button className={styles['change-btn']} onClick={nextFotoHandler}>
         <FontAwesomeIcon icon={faChevronRight} size="3x" />
       </button>
-      <button className={styles["close-btn"]} onClick={fotoRemoveHandler}>
+      <button className={styles['close-btn']} onClick={fotoRemoveHandler}>
         <FontAwesomeIcon icon={faXmark} size="3x" />
       </button>
     </div>
