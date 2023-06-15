@@ -12,7 +12,7 @@
 }
 
 .navbar-scroll {
-    height: 80px;
+    height: 100px;
     background-color: var(--dark-color);
 }
 
@@ -40,7 +40,7 @@
 }
 
 .logo {
-    flex: 0.4;
+    flex: 0 0 150px;
     position: relative;
     height: 150px;
     border-radius: 100px;
@@ -50,18 +50,12 @@
 }
 
 .logo-small {
-    flex: 1;
+    flex: 0 0 250px;
     position: relative;
-    height: 80px;
+    height: 100px;
     margin-top: 0px;
     align-items: center;
 }
-
-/* .logo-text h3 {
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin: 0 15px;
-} */
 
 .menu-icon {
     margin: 15px
@@ -142,5 +136,11 @@
     100% {
         transform: translateY(0);
         opacity: 0.9;
+    }
+}
+
+@media (max-width: 1000px) {
+    .links li {
+        font-size: 1rem;
     }
 }

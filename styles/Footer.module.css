@@ -4,12 +4,13 @@
 }
 
 .footer {
+  position: relative;
   display: flex;
   align-items: flex-start;
   height: 100%;
   max-width: 1220px;
   margin: auto;
-  padding: 2rem 0;
+  padding: 2rem 20px;
   gap: 50px;
 }
 
@@ -23,8 +24,7 @@
 
 .logo {
   position: relative;
-  height: 100%;
-  align-self: center;
+  height: 300px;
 }
 
 .pages {
@@ -59,9 +59,43 @@
 }
 
 .links {
+  position: absolute;
   flex: 1;
   display: flex;
   align-self: flex-end;
   justify-content: flex-end;
   gap: 10px;
+  bottom: 20px;
+  right: 20px;
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    height: 330px;
+  }
+
+  .footer {
+    max-width: 750px;
+    padding: 30px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  .footer > * {
+    flex: 1 1 200px;
+  }
+
+  .footer > .logo {
+    flex: 0 0 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 750px) {
+  .wrapper {
+    height: 280px;
+  }
+  .logo {
+    display: none;
+  }
 }

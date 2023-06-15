@@ -25,6 +25,7 @@ export default function Home() {
       <main className={styles.main}>
         <Infos />
         <Description
+          classProp="home-description"
           imgSrc="/images/Equipo.jpg"
           imgAlt="Sala de atendimento com equipo"
           text={[

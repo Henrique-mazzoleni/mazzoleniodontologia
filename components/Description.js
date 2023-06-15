@@ -2,9 +2,9 @@ import Image from "next/image";
 
 import styles from "../styles/Description.module.css";
 
-export default function Description({ imgSrc, imgAlt, text }) {
+export default function Description({ imgSrc, imgAlt, text, classProp }) {
   return (
-    <section className={styles.description}>
+    <section className={`${styles.description} ${styles[classProp]}`}>
       <div className={styles.image}>
         <Image
           src={imgSrc}
@@ -15,7 +15,9 @@ export default function Description({ imgSrc, imgAlt, text }) {
         />
       </div>
       <div className={styles.text}>
-        {text.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
+        {text.map((paragraph, i) => (
+          <p key={i}>{paragraph}</p>
+        ))}
       </div>
     </section>
   );

@@ -6,13 +6,15 @@
 
 .tratamentos h2 {
     text-align: center;
+    font-size: 1.8rem;
     font-weight:500;
-    margin-bottom: 40px;
+    margin: 40px;
 }
 
 .tratamentos h3 {
     text-align: center;
-    margin-bottom: 20px;
+    font-size: 1.4rem;
+    margin: 40px 0 20px;
 }
 
 .display {

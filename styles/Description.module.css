@@ -30,3 +30,8 @@
     color: var(--primary-color);
     margin-bottom: 5px;
 }
+
+.home-description {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
