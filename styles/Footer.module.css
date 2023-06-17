@@ -102,7 +102,7 @@
 
 @media (max-width: 550px) {
   .wrapper {
-    height: 530px;
+    height: 480px;
     background-color: #aaa;
   }
 
@@ -110,10 +110,13 @@
     flex-direction: column;
     justify-content: flex-start;
     height: 100%;
-    padding: 10px 20px 70px;
-    gap: 10px;
+    padding: 20px 20px 70px;
+    gap: 20px;
   }
 
+  .endereco p {
+    margin-top: 10px;
+  }
 
   .footer > * {
     flex: 1 1 150px;

@@ -58,8 +58,12 @@ export default function Navbar() {
       <li>
         <Link href="/">Home</Link>
       </li>
-      <li onMouseEnter={showSobreHandler} onMouseLeave={showSobreHandler}>
-        Sobre
+      <li
+        onMouseEnter={showSobreHandler}
+        onMouseLeave={showSobreHandler}
+        onClick={showSobreHandler}
+      >
+        Sobre &gt;
         {showSobre && (
           <ul className={styles['drop-down-list']}>
             <span>Conheça a clínica</span>
@@ -75,8 +79,9 @@ export default function Navbar() {
       <li
         onMouseEnter={showTratamentosHandler}
         onMouseLeave={showTratamentosHandler}
+        onClick={showTratamentosHandler}
       >
-        Tratementos
+        Tratementos &gt;
         {showTratamentos && (
           <ul className={styles['drop-down-list']}>
             {listaTratamentos.map(({ tipo, tratamentos }, i) => (
@@ -104,12 +109,10 @@ export default function Navbar() {
   );
 
   const [navDeskClass, setNavDeskClass] = useState(
-    `${width < 550 ? styles['navbar-scroll'] : styles['navbar-top']} ${
-      styles.navbar
-    }`
+    `${styles['navbar-top']} ${styles.navbar}`
   );
-  console.log(width < 550);
-  const [logo, setLogo] = useState(mobileMode ? logoSmallImg : logoImg);
+
+  const [logo, setLogo] = useState(logoImg);
   const [showLinks, setShowLinks] = useState(false);
 
   const toggleMenuHandler = () => {
@@ -139,18 +142,27 @@ export default function Navbar() {
     };
   }, [mobileMode]);
 
+  if (mobileMode)
+    return (
+      <nav className={styles['navbar-mobile']}>
+        <div className={styles.content}>
+          {logoSmallImg}
+          {menuLogo}
+        </div>
+        {showLinks && (
+          <div className={styles['menu-dropdown']}>
+            <ul className={styles['links-column']}>{menu}</ul>
+          </div>
+        )}
+      </nav>
+    );
+
   return (
     <nav className={navDeskClass}>
       <div className={`${styles.content} ${styles['menu-fixed']}`}>
         {logo}
-        {mobileMode && menuLogo}
-        {!mobileMode && <ul className={styles.links}>{menu}</ul>}
+        <ul className={styles.links}>{menu}</ul>
       </div>
-      {showLinks && mobileMode && (
-        <div className={styles['menu-dropdown']}>
-          <ul className={styles['links-column']}>{menu}</ul>
-        </div>
-      )}
     </nav>
   );
 }

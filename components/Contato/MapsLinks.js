@@ -20,18 +20,6 @@ import {
 
 import styles from '../../styles/Contato/MapLinks.module.css';
 
-// const logo = (
-//   <div className={styles.logo}>
-//     <Image
-//       src="/images/logo_icon.png"
-//       alt="Mazzoleni Logo"
-//       layout="fill"
-//       objectFit="cover"
-//       objectPosition="top center"
-//     />
-//   </div>
-// );
-
 export default function MapLinks() {
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_API_KEY,

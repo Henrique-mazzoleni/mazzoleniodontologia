@@ -6,7 +6,6 @@
 
 .map-links > * {
   flex: 1;
-
 }
 
 .links {
@@ -23,7 +22,6 @@
   display: flex;
   align-self: flex-start;
   margin: 10px 0;
-  /* width: 80%; */
 }
 
 .row > * {
@@ -47,7 +45,7 @@
   border: 0;
   background-color: inherit;
   color: inherit;
-  margin: 25px 0 ;
+  margin: 25px 0;
   cursor: pointer;
 }
 
@@ -83,4 +81,12 @@
 
 .logo {
   height: 20px;
+}
+
+@media (max-width: 800px) {
+  .map-links {
+    flex-direction: column;
+    height: 1000px;
+    width: 100%;
+  }
 }
