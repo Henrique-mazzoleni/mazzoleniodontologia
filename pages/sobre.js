@@ -9,6 +9,7 @@ import Description from "../components/Description";
 import Citacao from "../components/Citacao";
 import Diferenciais from "../components/Sobre/Diferenciais";
 import Galeria from "../components/Sobre/Galeria";
+import Whatsapp from '../components/Whatsapp';
 
 export default function Sobre() {
   return (
@@ -24,17 +25,16 @@ export default function Sobre() {
           imgSrc="/images/clínica.jpg"
           imgAlt="recepcionista atendendo"
           text={[
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, tenetur, cumque dignissimos quia autem non optio alias provident amet est perferendis nobis veritatis unde nostrum consequatur. Debitis cupiditate a molestias.",
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minus sed amet assumenda mollitia quod blanditiis recusandae corrupti dignissimos sit.",
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi commodi, facere hic earum enim officia sunt quis ipsam harum architecto minima facilis sequi tempore reiciendis recusandae explicabo doloremque alias provident debitis saepe, ipsa neque, dolorum veritatis. Autem, porro asperiores voluptates, optio sequi, ab aperiam quod officiis ipsam quidem ea deleniti.",
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, tenetur, cumque dignissimos quia autem non optio alias provident amet est perferendis nobis veritatis unde nostrum consequatur. Debitis cupiditate a molestias.',
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minus sed amet assumenda mollitia quod blanditiis recusandae corrupti dignissimos sit.',
+            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi commodi, facere hic earum enim officia sunt quis ipsam harum architecto minima facilis sequi tempore reiciendis recusandae explicabo doloremque alias provident debitis saepe, ipsa neque, dolorum veritatis. Autem, porro asperiores voluptates, optio sequi, ab aperiam quod officiis ipsam quidem ea deleniti.',
           ]}
         />
         <Diferenciais />
-        <Citacao 
-          texto="Ambiente agradável e salas equipadas com tecnologia de ponta"
-        />
+        <Citacao texto="Ambiente agradável e salas equipadas com tecnologia de ponta" />
         <Galeria />
       </main>
+      <Whatsapp />
       <Footer />
     </Fragment>
   );

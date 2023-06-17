@@ -11,6 +11,7 @@ import Footer from "../components/Footer";
 
 import styles from "../styles/Home/Home.module.css";
 import tratamentosData from './api/data.json';
+import Whatsapp from '../components/Whatsapp';
 
 export default function Home() {
   return (
@@ -37,6 +38,7 @@ export default function Home() {
       </main>
 
       <Footer />
+      <Whatsapp />
     </Fragment>
   );
 }

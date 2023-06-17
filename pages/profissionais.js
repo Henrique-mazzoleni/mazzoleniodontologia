@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Bio from "../components/Profissionais/Bio";
+import Whatsapp from "../components/Whatsapp";
 
 export default function Profissionais() {
   return (
@@ -22,6 +23,7 @@ export default function Profissionais() {
         bio="Dra. Juliana M. Kobayashi - CROSP 77436 - Graduada em Odontologia pela USP em 2002; Especialista em ortodontia pela Associação Paulista de Cirurgiões Dentistas em 2008. Atua na área de reabilitação protética com ênfase em estética e na área de ortodontia convencional e com alinhadores."
         sortLeft={true}
       />
+      <Whatsapp />
       <Footer />
     </Fragment>
   );

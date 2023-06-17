@@ -239,3 +239,10 @@
     height: 60px;
   }
 }
+
+@media (max-width: 550px) {
+  .navbar-mobile li {
+    width: 100%;
+    padding: 10px;
+  }
+}

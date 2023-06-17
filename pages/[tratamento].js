@@ -6,6 +6,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import tratamentosData from './api/data.json';
 import Description from '../components/Description';
+import Whatsapp from '../components/Whatsapp';
 
 export default function Tratamento({ tratamentos }) {
   const router = useRouter();
@@ -20,6 +21,7 @@ export default function Tratamento({ tratamentos }) {
       <Navbar />
       <Header title={nome} />
       <Description text={descricao} imgSrc={imgSrc} imgAlt={imgAlt} />
+      <Whatsapp />
       <Footer />
     </Fragment>
   );

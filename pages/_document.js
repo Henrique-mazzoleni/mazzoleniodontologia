@@ -1,6 +1,4 @@
-import { Html, Head, Main, NextScript } from "next/document";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
@@ -8,7 +6,11 @@ export default function Document() {
       <Head>
         <link rel="icon" href="/images/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"

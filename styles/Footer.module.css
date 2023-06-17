@@ -66,7 +66,7 @@
   justify-content: flex-end;
   gap: 10px;
   bottom: 20px;
-  right: 20px;
+  right: 120px;
 }
 
 @media (max-width: 1000px) {
@@ -91,9 +91,9 @@
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 720px) {
   .wrapper {
-    height: 280px;
+    height: 320px;
   }
   .logo {
     display: none;
@@ -124,5 +124,12 @@
 
   .pages {
     width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .wrapper {
+    height: 500px;
+    background-color: #aaa;
   }
 }

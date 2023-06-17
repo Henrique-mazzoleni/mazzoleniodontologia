@@ -43,7 +43,7 @@ export default function Navbar() {
 
   useEffect(() => {
     setMobileMode(width < 550);
-  }, [width, mobileMode]);
+  }, [width]);
 
   const showSobreHandler = () => {
     setShowSobre((state) => !state);
@@ -59,9 +59,9 @@ export default function Navbar() {
         <Link href="/">Home</Link>
       </li>
       <li
-        onMouseEnter={showSobreHandler}
-        onMouseLeave={showSobreHandler}
-        onClick={showSobreHandler}
+        onMouseEnter={!mobileMode && showSobreHandler}
+        onMouseLeave={!mobileMode && showSobreHandler}
+        onClick={mobileMode && showSobreHandler}
       >
         Sobre &gt;
         {showSobre && (
@@ -77,9 +77,9 @@ export default function Navbar() {
         )}
       </li>
       <li
-        onMouseEnter={showTratamentosHandler}
-        onMouseLeave={showTratamentosHandler}
-        onClick={showTratamentosHandler}
+        onMouseEnter={!mobileMode && showTratamentosHandler}
+        onMouseLeave={!mobileMode && showTratamentosHandler}
+        onClick={mobileMode && showTratamentosHandler}
       >
         Tratementos &gt;
         {showTratamentos && (
@@ -159,7 +159,7 @@ export default function Navbar() {
 
   return (
     <nav className={navDeskClass}>
-      <div className={`${styles.content} ${styles['menu-fixed']}`}>
+      <div className={styles.content}>
         {logo}
         <ul className={styles.links}>{menu}</ul>
       </div>

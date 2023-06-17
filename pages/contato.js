@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import styles from '../styles/Contato/Contato.module.css';
 import Navbar from '../components/Navbar';
 import MapLinks from '../components/Contato/MapsLinks';
+import Whatsapp from '../components/Whatsapp';
 
 export default function Contato() {
   return (
@@ -16,6 +17,7 @@ export default function Contato() {
         <Infos />
         <MapLinks />
       </main>
+      <Whatsapp />
       <Footer />
     </Fragment>
   );
