@@ -1,12 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
-
-import styles from '../styles/Navbar.module.css';
 import { Fragment, useEffect, useState } from 'react';
+
 import useWindowSize from '../hooks/useWindowSize';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+
+import styles from '../styles/Navbar.module.css';
 
 import listaTratamentos from '../pages/api/data.json';
 
@@ -36,13 +37,13 @@ const logoSmallImg = (
 
 export default function Navbar() {
   const { width } = useWindowSize();
-  const [mobileMode, setMobileMode] = useState(width < 430);
+  const [mobileMode, setMobileMode] = useState(width < 550);
   const [showSobre, setShowSobre] = useState(false);
   const [showTratamentos, setShowTratamentos] = useState(false);
 
   useEffect(() => {
-    setMobileMode(width < 430);
-  }, [width]);
+    setMobileMode(width < 550);
+  }, [width, mobileMode]);
 
   const showSobreHandler = () => {
     setShowSobre((state) => !state);
@@ -103,9 +104,12 @@ export default function Navbar() {
   );
 
   const [navDeskClass, setNavDeskClass] = useState(
-    `${styles['navbar-top']} ${styles.navbar}`
+    `${width < 550 ? styles['navbar-scroll'] : styles['navbar-top']} ${
+      styles.navbar
+    }`
   );
-  const [logo, setLogo] = useState(logoImg);
+  console.log(width < 550);
+  const [logo, setLogo] = useState(mobileMode ? logoSmallImg : logoImg);
   const [showLinks, setShowLinks] = useState(false);
 
   const toggleMenuHandler = () => {
@@ -114,7 +118,7 @@ export default function Navbar() {
 
   const menuLogo = (
     <div className={styles['menu-icon']} onClick={toggleMenuHandler}>
-      <FontAwesomeIcon icon={faBars} size="2x" />
+      <FontAwesomeIcon icon={faBars} size="1x" />
     </div>
   );
 
@@ -143,7 +147,7 @@ export default function Navbar() {
         {!mobileMode && <ul className={styles.links}>{menu}</ul>}
       </div>
       {showLinks && mobileMode && (
-        <div className={`${styles.content} ${styles['menu-dropdown']}`}>
+        <div className={styles['menu-dropdown']}>
           <ul className={styles['links-column']}>{menu}</ul>
         </div>
       )}

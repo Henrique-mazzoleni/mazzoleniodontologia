@@ -1,59 +1,109 @@
 .galeria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    min-height: 500px;
-    max-width: 1200px;
-    margin: auto;
-    padding: 70px 0;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  min-height: 500px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 70px 30px;
 }
 
 .imgCard {
-    position: relative;  
-    height: 270px;
-    width: 380px;
+  position: relative;
+  height: 240px;
+  width: 350px;
 }
 
 .imgCard:hover img {
-    transition: transform .5s;
-    transform: scale(1.1);
+  transition: transform 0.5s;
+  transform: scale(1.1);
 }
 
 .foto-overlay {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    inset: 0;
-    z-index: 15;
-    background-color: var(--light-color);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  inset: 0;
+  z-index: 15;
+  background-color: var(--light-color);
 }
 
 .img-overlay-card {
-    position: absolute;
-    inset: 0;
-    margin: 100px;
-    z-index: 20;
+  position: absolute;
+  inset: 0;
+  margin: 100px;
+  z-index: 20;
 }
 
 .foto-overlay svg:hover {
-    transform: scale(1.5);
-    transition: transform 0.5s;
+  transform: scale(1.5);
+  transition: transform 0.5s;
 }
 
 .change-btn {
-    border: none;
-    width: 100px;
-    height: 100%;
+  border: none;
+  width: 100px;
+  height: 100%;
 }
 
 .close-btn {
-    position: absolute;
-    border: none;
-    top: 0;
-    right: 0;
-    width: 100px;
-    height: 100px;
+  position: absolute;
+  border: none;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 800px) {
+  .imgCard {
+    height: 180px;
+    width: 270px;
+  }
+
+  .img-overlay-card {
+    margin: 30px 50px;
+  }
+
+  .change-btn {
+    width: 50px;
+    transform: scale(0.7);
+  }
+
+  .close-btn {
+    width: 50px;
+    height: 50px;
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 630px) {
+  .imgCard {
+    height: 140px;
+    width: 210px;
+  }
+
+  .img-overlay-card {
+    margin: 30px;
+  }
+
+  .change-btn {
+    width: 30px;
+    transform: scale(0.5);
+  }
+
+  .close-btn {
+    width: 30px;
+    height: 30px;
+    transform: scale(0.5);
+  }
+}
+
+@media (max-width: 500px) {
+  .imgCard {
+    height: 220px;
+    width: 320px;
+  }
 }
