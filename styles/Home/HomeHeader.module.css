@@ -17,8 +17,9 @@
   display: flex;
   max-width: 940px;
   margin: auto;
-  padding-top: 150px;
+  padding-top: 200px;
   align-items: center;
+  /* padding-top: 50px; */
 }
 
 .title {
@@ -28,9 +29,6 @@
   font-size: 3rem;
   font-weight: 300;
   color: var(--light-color);
-}
-
-.title {
   text-align: center;
   font-weight: 100;
 }
