@@ -1,14 +1,14 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebook,
   faInstagram,
   faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
+} from '@fortawesome/free-brands-svg-icons';
 
-import styles from "../styles/Footer.module.css";
+import styles from '../styles/Footer.module.css';
 
 export default function Footer() {
   return (
@@ -32,7 +32,6 @@ export default function Footer() {
           <Link href="/sobre">
             <li>&gt; A Clínica</li>
           </Link>
-          <li>&gt; Noticias</li>
           <Link href="/contato">
             <li>&gt; Contato</li>
           </Link>

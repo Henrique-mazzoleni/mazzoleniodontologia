@@ -5,8 +5,7 @@ import Navbar from "../components/Navbar";
 import Description from "../components/Description";
 import HomeHeader from "../components/Home/HomeHeader";
 import Infos from "../components/Home/Infos";
-import Tratamentos from "../components/Home/Tratamentos";
-import Depoimentos from "../components/Home/Depoimentos";
+import Tratamentos from '../components/Home/Tratamentos';
 import Footer from "../components/Footer";
 
 import styles from "../styles/Home/Home.module.css";
@@ -34,7 +33,6 @@ export default function Home() {
           ]}
         />
         <Tratamentos listaTratamentos={tratamentosData} />
-        <Depoimentos />
       </main>
 
       <Footer />

@@ -37,17 +37,12 @@ const logoSmallImg = (
 
 export default function Navbar() {
   const { width } = useWindowSize();
-  const [mobileMode, setMobileMode] = useState(width < 550);
-  const [showSobre, setShowSobre] = useState(false);
+  const [mobileMode, setMobileMode] = useState(width < 575);
   const [showTratamentos, setShowTratamentos] = useState(false);
 
   useEffect(() => {
-    setMobileMode(width < 550);
+    setMobileMode(width < 575);
   }, [width]);
-
-  const showSobreHandler = () => {
-    setShowSobre((state) => !state);
-  };
 
   const showTratamentosHandler = () => {
     setShowTratamentos((state) => !state);
@@ -58,28 +53,16 @@ export default function Navbar() {
       <li>
         <Link href="/">Home</Link>
       </li>
-      <li
-        onMouseEnter={!mobileMode && showSobreHandler}
-        onMouseLeave={!mobileMode && showSobreHandler}
-        onClick={mobileMode && showSobreHandler}
-      >
-        Sobre &gt;
-        {showSobre && (
-          <ul className={styles['drop-down-list']}>
-            <span>Conheça a clínica</span>
-            <li>
-              <Link href="/sobre">A Clínica</Link>
-            </li>
-            <li>
-              <Link href="/profissionais">Profissionais</Link>
-            </li>
-          </ul>
-        )}
+      <li>
+        <Link href="/sobre">A Clínica</Link>
+      </li>
+      <li>
+        <Link href="/profissionais">Profissionais</Link>
       </li>
       <li
-        onMouseEnter={!mobileMode && showTratamentosHandler}
-        onMouseLeave={!mobileMode && showTratamentosHandler}
-        onClick={mobileMode && showTratamentosHandler}
+        onMouseEnter={!mobileMode ? showTratamentosHandler : () => {}}
+        onMouseLeave={!mobileMode ? showTratamentosHandler : () => {}}
+        onClick={mobileMode ? showTratamentosHandler : () => {}}
       >
         Tratementos &gt;
         {showTratamentos && (
@@ -98,9 +81,6 @@ export default function Navbar() {
             ))}
           </ul>
         )}
-      </li>
-      <li>
-        <Link href="/">Noticias</Link>
       </li>
       <li>
         <Link href="/contato">Contatos</Link>
