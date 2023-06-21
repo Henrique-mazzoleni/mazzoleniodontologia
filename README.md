@@ -1,5 +1,6 @@
-This is an internetsite for the Mazzoleni Sao Paulo based Dental Clinic
+This is an internet site for the Mazzoleni Sao Paulo-based Dental Clinic
 
 todos:
-- galerie on mobile landscape
+- Galerie on mobile landscape
+- Profissionais on footer
 - mobile layout
