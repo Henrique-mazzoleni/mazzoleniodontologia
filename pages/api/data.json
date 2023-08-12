@@ -1,166 +1,222 @@
 [
   {
-    "tipo": "Tratamento Estético",
-    "tratamentos": [
+    "nome": "Tratamento Endodôntico (tratamento de canal)",
+    "descricao": [
+      "O tratamento endodôntico, popularmente conhecido com tratamento de canal, é indicado quando a polpa dental encontra-se inflamada ou necrosada. Ele consiste da remoção desse tecido inflamado e/ou da limpeza do espaço que esse ocupava, conhecido como o canal radicular. Essa limpeza interna do dente é feita atraves de instrumentos e substâncias químicas que têm como objetivo esvaziar o conteudo dos canais radiculares, removendo quaisquer tecidos e possível contaminação microbiana, para o posterior preenchimento desse espaço. Em casos de recontaminação ou persistência da contaminação após o tratamento endodôntico, pode ser indicado o retratamento convencional ou cirúrgico."
+    ],
+    "imgSrc": "/images/tratamentos/Canal - ilustração.jpg",
+    "imgAlt": "canal ilustração",
+    "imgList": [
       {
-        "nome": "Laserterapia",
-        "descricao": [
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore laboriosam rerum eligendi pariatur in iste animi, distinctio quisquam assumenda, aliquid doloremque officia tenetur doloribus. Dolores voluptatibus, excepturi nostrum pariatur eaque alias eum saepe nihil quas laboriosam harum perspiciatis sequi inventore fugit eius est rerum sint porro quasi ab tempora maxime cumque sunt! Fugit blanditiis aliquam dolor eligendi, necessitatibus ratione enim aliquid tempora, facere officia repudiandae velit eius ut sit cupiditate repellat quidem, architecto fuga officiis id temporibus! Eveniet molestiae voluptate excepturi veritatis libero! Saepe sed unde dolor voluptatibus obcaecati distinctio odit iure earum repellat fuga, provident inventore nam labore a!",
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus illum, sed eligendi repellat dolorem magni voluptatum dolores exercitationem illo at, numquam eveniet nam repellendus quam. Maiores illo dicta consequuntur non!",
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque qui quia, magnam molestias excepturi voluptate illo modi sint error, iure aperiam reprehenderit harum enim. Impedit magni accusantium doloremque, beatae itaque consequuntur asperiores harum quibusdam voluptatibus saepe adipisci atque deserunt, incidunt enim! Quasi, fugiat libero veniam inventore et repudiandae expedita rem?"
-        ],
-        "imgSrc": "/images/imagem.jpg",
-        "imgAlt": "imagem"
+        "title": "Caso Clínico 1",
+        "fotos": [
+          {
+            "src": "/images/tratamentos/Canal - Caso clínico 1 Imagem A.jpeg",
+            "alt": "Caso clínico 1 Imagem A"
+          },
+          {
+            "src": "/images/tratamentos/Canal - Caso clínico 1 Imagem B.jpeg",
+            "alt": "Caso clínico 1 Imagem B"
+          }
+        ]
       },
       {
-        "nome": "Dentística Estética",
-        "descricao": [
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore laboriosam rerum eligendi pariatur in iste animi, distinctio quisquam assumenda, aliquid doloremque officia tenetur doloribus. Dolores voluptatibus, excepturi nostrum pariatur eaque alias eum saepe nihil quas laboriosam harum perspiciatis sequi inventore fugit eius est rerum sint porro quasi ab tempora maxime cumque sunt! Fugit blanditiis aliquam dolor eligendi, necessitatibus ratione enim aliquid tempora, facere officia repudiandae velit eius ut sit cupiditate repellat quidem, architecto fuga officiis id temporibus! Eveniet molestiae voluptate excepturi veritatis libero! Saepe sed unde dolor voluptatibus obcaecati distinctio odit iure earum repellat fuga, provident inventore nam labore a!",
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus illum, sed eligendi repellat dolorem magni voluptatum dolores exercitationem illo at, numquam eveniet nam repellendus quam. Maiores illo dicta consequuntur non!",
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque qui quia, magnam molestias excepturi voluptate illo modi sint error, iure aperiam reprehenderit harum enim. Impedit magni accusantium doloremque, beatae itaque consequuntur asperiores harum quibusdam voluptatibus saepe adipisci atque deserunt, incidunt enim! Quasi, fugiat libero veniam inventore et repudiandae expedita rem?"
-        ],
-        "imgSrc": "/images/imagem.jpg",
-        "imgAlt": "imagem"
+        "title": "Caso Clínico 2",
+        "fotos": [
+          {
+            "src": "/images/tratamentos/Canal - Caso clínico 2 Imagem A.JPG",
+            "alt": "Caso clínico 2 Imagem A"
+          },
+          {
+            "src": "/images/tratamentos/Canal - Caso clínico 2 Imagem B.JPG",
+            "alt": "Caso clínico 2 Imagem B"
+          }
+        ]
       },
       {
-        "nome": "Clareamento",
-        "descricao": [
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore laboriosam rerum eligendi pariatur in iste animi, distinctio quisquam assumenda, aliquid doloremque officia tenetur doloribus. Dolores voluptatibus, excepturi nostrum pariatur eaque alias eum saepe nihil quas laboriosam harum perspiciatis sequi inventore fugit eius est rerum sint porro quasi ab tempora maxime cumque sunt! Fugit blanditiis aliquam dolor eligendi, necessitatibus ratione enim aliquid tempora, facere officia repudiandae velit eius ut sit cupiditate repellat quidem, architecto fuga officiis id temporibus! Eveniet molestiae voluptate excepturi veritatis libero! Saepe sed unde dolor voluptatibus obcaecati distinctio odit iure earum repellat fuga, provident inventore nam labore a!",
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus illum, sed eligendi repellat dolorem magni voluptatum dolores exercitationem illo at, numquam eveniet nam repellendus quam. Maiores illo dicta consequuntur non!",
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque qui quia, magnam molestias excepturi voluptate illo modi sint error, iure aperiam reprehenderit harum enim. Impedit magni accusantium doloremque, beatae itaque consequuntur asperiores harum quibusdam voluptatibus saepe adipisci atque deserunt, incidunt enim! Quasi, fugiat libero veniam inventore et repudiandae expedita rem?"
-        ],
-        "imgSrc": "/images/imagem.jpg",
-        "imgAlt": "imagem"
-      },
-      {
-        "nome": "Facetas em Porcelana",
-        "descricao": [
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore laboriosam rerum eligendi pariatur in iste animi, distinctio quisquam assumenda, aliquid doloremque officia tenetur doloribus. Dolores voluptatibus, excepturi nostrum pariatur eaque alias eum saepe nihil quas laboriosam harum perspiciatis sequi inventore fugit eius est rerum sint porro quasi ab tempora maxime cumque sunt! Fugit blanditiis aliquam dolor eligendi, necessitatibus ratione enim aliquid tempora, facere officia repudiandae velit eius ut sit cupiditate repellat quidem, architecto fuga officiis id temporibus! Eveniet molestiae voluptate excepturi veritatis libero! Saepe sed unde dolor voluptatibus obcaecati distinctio odit iure earum repellat fuga, provident inventore nam labore a!",
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus illum, sed eligendi repellat dolorem magni voluptatum dolores exercitationem illo at, numquam eveniet nam repellendus quam. Maiores illo dicta consequuntur non!",
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque qui quia, magnam molestias excepturi voluptate illo modi sint error, iure aperiam reprehenderit harum enim. Impedit magni accusantium doloremque, beatae itaque consequuntur asperiores harum quibusdam voluptatibus saepe adipisci atque deserunt, incidunt enim! Quasi, fugiat libero veniam inventore et repudiandae expedita rem?"
-        ],
-        "imgSrc": "/images/imagem.jpg",
-        "imgAlt": "imagem"
-      },
-      {
-        "nome": "Implantodontia",
-        "descricao": [
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore laboriosam rerum eligendi pariatur in iste animi, distinctio quisquam assumenda, aliquid doloremque officia tenetur doloribus. Dolores voluptatibus, excepturi nostrum pariatur eaque alias eum saepe nihil quas laboriosam harum perspiciatis sequi inventore fugit eius est rerum sint porro quasi ab tempora maxime cumque sunt! Fugit blanditiis aliquam dolor eligendi, necessitatibus ratione enim aliquid tempora, facere officia repudiandae velit eius ut sit cupiditate repellat quidem, architecto fuga officiis id temporibus! Eveniet molestiae voluptate excepturi veritatis libero! Saepe sed unde dolor voluptatibus obcaecati distinctio odit iure earum repellat fuga, provident inventore nam labore a!",
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus illum, sed eligendi repellat dolorem magni voluptatum dolores exercitationem illo at, numquam eveniet nam repellendus quam. Maiores illo dicta consequuntur non!",
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque qui quia, magnam molestias excepturi voluptate illo modi sint error, iure aperiam reprehenderit harum enim. Impedit magni accusantium doloremque, beatae itaque consequuntur asperiores harum quibusdam voluptatibus saepe adipisci atque deserunt, incidunt enim! Quasi, fugiat libero veniam inventore et repudiandae expedita rem?"
-        ],
-        "imgSrc": "/images/imagem.jpg",
-        "imgAlt": "imagem"
-      },
-      {
-        "nome": "Alinhadores Ortodônticos",
-        "descricao": [
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore laboriosam rerum eligendi pariatur in iste animi, distinctio quisquam assumenda, aliquid doloremque officia tenetur doloribus. Dolores voluptatibus, excepturi nostrum pariatur eaque alias eum saepe nihil quas laboriosam harum perspiciatis sequi inventore fugit eius est rerum sint porro quasi ab tempora maxime cumque sunt! Fugit blanditiis aliquam dolor eligendi, necessitatibus ratione enim aliquid tempora, facere officia repudiandae velit eius ut sit cupiditate repellat quidem, architecto fuga officiis id temporibus! Eveniet molestiae voluptate excepturi veritatis libero! Saepe sed unde dolor voluptatibus obcaecati distinctio odit iure earum repellat fuga, provident inventore nam labore a!",
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus illum, sed eligendi repellat dolorem magni voluptatum dolores exercitationem illo at, numquam eveniet nam repellendus quam. Maiores illo dicta consequuntur non!",
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque qui quia, magnam molestias excepturi voluptate illo modi sint error, iure aperiam reprehenderit harum enim. Impedit magni accusantium doloremque, beatae itaque consequuntur asperiores harum quibusdam voluptatibus saepe adipisci atque deserunt, incidunt enim! Quasi, fugiat libero veniam inventore et repudiandae expedita rem?"
-        ],
-        "imgSrc": "/images/imagem.jpg",
-        "imgAlt": "imagem"
-      },
-      {
-        "nome": "Prótese Dentária",
-        "descricao": [
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore laboriosam rerum eligendi pariatur in iste animi, distinctio quisquam assumenda, aliquid doloremque officia tenetur doloribus. Dolores voluptatibus, excepturi nostrum pariatur eaque alias eum saepe nihil quas laboriosam harum perspiciatis sequi inventore fugit eius est rerum sint porro quasi ab tempora maxime cumque sunt! Fugit blanditiis aliquam dolor eligendi, necessitatibus ratione enim aliquid tempora, facere officia repudiandae velit eius ut sit cupiditate repellat quidem, architecto fuga officiis id temporibus! Eveniet molestiae voluptate excepturi veritatis libero! Saepe sed unde dolor voluptatibus obcaecati distinctio odit iure earum repellat fuga, provident inventore nam labore a!",
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus illum, sed eligendi repellat dolorem magni voluptatum dolores exercitationem illo at, numquam eveniet nam repellendus quam. Maiores illo dicta consequuntur non!",
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque qui quia, magnam molestias excepturi voluptate illo modi sint error, iure aperiam reprehenderit harum enim. Impedit magni accusantium doloremque, beatae itaque consequuntur asperiores harum quibusdam voluptatibus saepe adipisci atque deserunt, incidunt enim! Quasi, fugiat libero veniam inventore et repudiandae expedita rem?"
-        ],
-        "imgSrc": "/images/imagem.jpg",
-        "imgAlt": "imagem"
+        "title": "Caso Clínico 3",
+        "fotos": [
+          {
+            "src": "/images/tratamentos/Canal - Caso clínico 3 Imagem A.JPG",
+            "alt": "Caso clínico 3 Imagem A"
+          },
+          {
+            "src": "/images/tratamentos/Canal - Caso clínico 3 Imagem B.JPG",
+            "alt": "Caso clínico 3 Imagem B"
+          }
+        ]
       }
     ]
   },
   {
-    "tipo": "Especialidades",
-    "tratamentos": [
+    "nome": "Dentística (Restaurações diretas)",
+    "descricao": [
+      "A especialidade de dentística engloba os procedimentos restauradores executados de maneira direta no consultório dental, para devolver a forma e função dos dentes que perderam estrutura devido a processos cariosos ou a fraturas. Trabalhamos exclusivamente com materiais estéticos de primeira linha, e sempre buscando preservar ao máximo a estrutura natural dos dentes."
+    ],
+    "imgSrc": "/images/imagem.jpg",
+    "imgAlt": "imagem de atendimento de microscopio",
+    "imgList": [
       {
-        "nome": "ATM",
-        "descricao": [
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore laboriosam rerum eligendi pariatur in iste animi, distinctio quisquam assumenda, aliquid doloremque officia tenetur doloribus. Dolores voluptatibus, excepturi nostrum pariatur eaque alias eum saepe nihil quas laboriosam harum perspiciatis sequi inventore fugit eius est rerum sint porro quasi ab tempora maxime cumque sunt! Fugit blanditiis aliquam dolor eligendi, necessitatibus ratione enim aliquid tempora, facere officia repudiandae velit eius ut sit cupiditate repellat quidem, architecto fuga officiis id temporibus! Eveniet molestiae voluptate excepturi veritatis libero! Saepe sed unde dolor voluptatibus obcaecati distinctio odit iure earum repellat fuga, provident inventore nam labore a!",
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus illum, sed eligendi repellat dolorem magni voluptatum dolores exercitationem illo at, numquam eveniet nam repellendus quam. Maiores illo dicta consequuntur non!",
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque qui quia, magnam molestias excepturi voluptate illo modi sint error, iure aperiam reprehenderit harum enim. Impedit magni accusantium doloremque, beatae itaque consequuntur asperiores harum quibusdam voluptatibus saepe adipisci atque deserunt, incidunt enim! Quasi, fugiat libero veniam inventore et repudiandae expedita rem?"
-        ],
-        "imgSrc": "/images/imagem.jpg",
-        "imgAlt": "imagem"
+        "title": "Caso Clínico 1",
+        "fotos": [
+          {
+            "src": "/images/tratamentos/Dentística - Caso clínico 1- Foto A.JPG",
+            "alt": "Caso clínico 1 Imagem A"
+          },
+          {
+            "src": "/images/tratamentos/Dentística - Caso clínico 1- Foto B.JPG",
+            "alt": "Caso clínico 1 Imagem B"
+          },
+          {
+            "src": "/images/tratamentos/Dentística - Caso clínico 1- Foto C.JPG",
+            "alt": "Caso clínico 1 Imagem C"
+          },
+          {
+            "src": "/images/tratamentos/Dentística - Caso clínico 1- Foto D.JPG",
+            "alt": "Caso clínico 1 Imagem D"
+          },
+          {
+            "src": "/images/tratamentos/Dentística - Caso clínico 1- Foto E.JPG",
+            "alt": "Caso clínico 1 Imagem E"
+          }
+        ]
       },
       {
-        "nome": "Endodontia",
-        "descricao": [
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore laboriosam rerum eligendi pariatur in iste animi, distinctio quisquam assumenda, aliquid doloremque officia tenetur doloribus. Dolores voluptatibus, excepturi nostrum pariatur eaque alias eum saepe nihil quas laboriosam harum perspiciatis sequi inventore fugit eius est rerum sint porro quasi ab tempora maxime cumque sunt! Fugit blanditiis aliquam dolor eligendi, necessitatibus ratione enim aliquid tempora, facere officia repudiandae velit eius ut sit cupiditate repellat quidem, architecto fuga officiis id temporibus! Eveniet molestiae voluptate excepturi veritatis libero! Saepe sed unde dolor voluptatibus obcaecati distinctio odit iure earum repellat fuga, provident inventore nam labore a!",
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus illum, sed eligendi repellat dolorem magni voluptatum dolores exercitationem illo at, numquam eveniet nam repellendus quam. Maiores illo dicta consequuntur non!",
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque qui quia, magnam molestias excepturi voluptate illo modi sint error, iure aperiam reprehenderit harum enim. Impedit magni accusantium doloremque, beatae itaque consequuntur asperiores harum quibusdam voluptatibus saepe adipisci atque deserunt, incidunt enim! Quasi, fugiat libero veniam inventore et repudiandae expedita rem?"
-        ],
-        "imgSrc": "/images/imagem.jpg",
-        "imgAlt": "imagem"
+        "title": "Caso Clínico 2",
+        "fotos": [
+          {
+            "src": "/images/tratamentos/Dentística - Caso clínico 2- Foto A.JPG",
+            "alt": "Caso clínico 2 Imagem A"
+          },
+          {
+            "src": "/images/tratamentos/Dentística - Caso clínico 2- Foto B.JPG",
+            "alt": "Caso clínico 2 Imagem B"
+          }
+        ]
       },
       {
-        "nome": "Odontopediatria",
-        "descricao": [
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore laboriosam rerum eligendi pariatur in iste animi, distinctio quisquam assumenda, aliquid doloremque officia tenetur doloribus. Dolores voluptatibus, excepturi nostrum pariatur eaque alias eum saepe nihil quas laboriosam harum perspiciatis sequi inventore fugit eius est rerum sint porro quasi ab tempora maxime cumque sunt! Fugit blanditiis aliquam dolor eligendi, necessitatibus ratione enim aliquid tempora, facere officia repudiandae velit eius ut sit cupiditate repellat quidem, architecto fuga officiis id temporibus! Eveniet molestiae voluptate excepturi veritatis libero! Saepe sed unde dolor voluptatibus obcaecati distinctio odit iure earum repellat fuga, provident inventore nam labore a!",
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus illum, sed eligendi repellat dolorem magni voluptatum dolores exercitationem illo at, numquam eveniet nam repellendus quam. Maiores illo dicta consequuntur non!",
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque qui quia, magnam molestias excepturi voluptate illo modi sint error, iure aperiam reprehenderit harum enim. Impedit magni accusantium doloremque, beatae itaque consequuntur asperiores harum quibusdam voluptatibus saepe adipisci atque deserunt, incidunt enim! Quasi, fugiat libero veniam inventore et repudiandae expedita rem?"
-        ],
-        "imgSrc": "/images/imagem.jpg",
-        "imgAlt": "imagem"
-      },
-      {
-        "nome": "Odontogeriatria",
-        "descricao": [
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore laboriosam rerum eligendi pariatur in iste animi, distinctio quisquam assumenda, aliquid doloremque officia tenetur doloribus. Dolores voluptatibus, excepturi nostrum pariatur eaque alias eum saepe nihil quas laboriosam harum perspiciatis sequi inventore fugit eius est rerum sint porro quasi ab tempora maxime cumque sunt! Fugit blanditiis aliquam dolor eligendi, necessitatibus ratione enim aliquid tempora, facere officia repudiandae velit eius ut sit cupiditate repellat quidem, architecto fuga officiis id temporibus! Eveniet molestiae voluptate excepturi veritatis libero! Saepe sed unde dolor voluptatibus obcaecati distinctio odit iure earum repellat fuga, provident inventore nam labore a!",
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus illum, sed eligendi repellat dolorem magni voluptatum dolores exercitationem illo at, numquam eveniet nam repellendus quam. Maiores illo dicta consequuntur non!",
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque qui quia, magnam molestias excepturi voluptate illo modi sint error, iure aperiam reprehenderit harum enim. Impedit magni accusantium doloremque, beatae itaque consequuntur asperiores harum quibusdam voluptatibus saepe adipisci atque deserunt, incidunt enim! Quasi, fugiat libero veniam inventore et repudiandae expedita rem?"
-        ],
-        "imgSrc": "/images/imagem.jpg",
-        "imgAlt": "imagem"
-      },
-      {
-        "nome": "Periodontia",
-        "descricao": [
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore laboriosam rerum eligendi pariatur in iste animi, distinctio quisquam assumenda, aliquid doloremque officia tenetur doloribus. Dolores voluptatibus, excepturi nostrum pariatur eaque alias eum saepe nihil quas laboriosam harum perspiciatis sequi inventore fugit eius est rerum sint porro quasi ab tempora maxime cumque sunt! Fugit blanditiis aliquam dolor eligendi, necessitatibus ratione enim aliquid tempora, facere officia repudiandae velit eius ut sit cupiditate repellat quidem, architecto fuga officiis id temporibus! Eveniet molestiae voluptate excepturi veritatis libero! Saepe sed unde dolor voluptatibus obcaecati distinctio odit iure earum repellat fuga, provident inventore nam labore a!",
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus illum, sed eligendi repellat dolorem magni voluptatum dolores exercitationem illo at, numquam eveniet nam repellendus quam. Maiores illo dicta consequuntur non!",
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque qui quia, magnam molestias excepturi voluptate illo modi sint error, iure aperiam reprehenderit harum enim. Impedit magni accusantium doloremque, beatae itaque consequuntur asperiores harum quibusdam voluptatibus saepe adipisci atque deserunt, incidunt enim! Quasi, fugiat libero veniam inventore et repudiandae expedita rem?"
-        ],
-        "imgSrc": "/images/imagem.jpg",
-        "imgAlt": "imagem"
-      },
-      {
-        "nome": "Ortodontia",
-        "descricao": [
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore laboriosam rerum eligendi pariatur in iste animi, distinctio quisquam assumenda, aliquid doloremque officia tenetur doloribus. Dolores voluptatibus, excepturi nostrum pariatur eaque alias eum saepe nihil quas laboriosam harum perspiciatis sequi inventore fugit eius est rerum sint porro quasi ab tempora maxime cumque sunt! Fugit blanditiis aliquam dolor eligendi, necessitatibus ratione enim aliquid tempora, facere officia repudiandae velit eius ut sit cupiditate repellat quidem, architecto fuga officiis id temporibus! Eveniet molestiae voluptate excepturi veritatis libero! Saepe sed unde dolor voluptatibus obcaecati distinctio odit iure earum repellat fuga, provident inventore nam labore a!",
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus illum, sed eligendi repellat dolorem magni voluptatum dolores exercitationem illo at, numquam eveniet nam repellendus quam. Maiores illo dicta consequuntur non!",
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque qui quia, magnam molestias excepturi voluptate illo modi sint error, iure aperiam reprehenderit harum enim. Impedit magni accusantium doloremque, beatae itaque consequuntur asperiores harum quibusdam voluptatibus saepe adipisci atque deserunt, incidunt enim! Quasi, fugiat libero veniam inventore et repudiandae expedita rem?"
-        ],
-        "imgSrc": "/images/imagem.jpg",
-        "imgAlt": "imagem"
+        "title": "Caso Clínico 3",
+        "fotos": [
+          {
+            "src": "/images/tratamentos/Dentística - Caso clínico 3- Foto A.JPG",
+            "alt": "Caso clínico 3 Imagem A"
+          },
+          {
+            "src": "/images/tratamentos/Dentística - Caso clínico 3- Foto B.JPG",
+            "alt": "Caso clínico 3 Imagem B"
+          },
+          {
+            "src": "/images/tratamentos/Dentística - Caso clínico 3- Foto C.JPG",
+            "alt": "Caso clínico 3 Imagem C"
+          },
+          {
+            "src": "/images/tratamentos/Dentística - Caso clínico 3- Foto D.JPG",
+            "alt": "Caso clínico 3 Imagem D"
+          }
+        ]
       }
     ]
   },
   {
-    "tipo": "Prevenção",
-    "tratamentos": [
+    "nome": "Prótese Dentárias e Tratamento estético (Coroas e facetas de porcelana)",
+    "descricao": [
+      "As próteses dentárias englobam as modalidades de prótese total (“Dentadura”), prótese parcial removível (“ponte móvel”) e prótese fixa, que inclui as próteses fixa de múltiplos dentes e as coroas unitárias. As facetas de porcelanas também se encaixam nessa categoria, já que são restaurações indiretas, feitas em laboratório para substituir parte da estrutura dental perdida ou comprometida esteticamente. Sempre consulte seu dentista para saber qual tipo de prótese é mais indicado para o seu caso."
+    ],
+    "imgSrc": "/images/Mazzoleni_logo.jpg",
+    "imgAlt": "logo Mazzoleni odontologia",
+    "imgList": [
       {
-        "nome": "Check-up Digital",
-        "descricao": [
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore laboriosam rerum eligendi pariatur in iste animi, distinctio quisquam assumenda, aliquid doloremque officia tenetur doloribus. Dolores voluptatibus, excepturi nostrum pariatur eaque alias eum saepe nihil quas laboriosam harum perspiciatis sequi inventore fugit eius est rerum sint porro quasi ab tempora maxime cumque sunt! Fugit blanditiis aliquam dolor eligendi, necessitatibus ratione enim aliquid tempora, facere officia repudiandae velit eius ut sit cupiditate repellat quidem, architecto fuga officiis id temporibus! Eveniet molestiae voluptate excepturi veritatis libero! Saepe sed unde dolor voluptatibus obcaecati distinctio odit iure earum repellat fuga, provident inventore nam labore a!",
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus illum, sed eligendi repellat dolorem magni voluptatum dolores exercitationem illo at, numquam eveniet nam repellendus quam. Maiores illo dicta consequuntur non!",
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque qui quia, magnam molestias excepturi voluptate illo modi sint error, iure aperiam reprehenderit harum enim. Impedit magni accusantium doloremque, beatae itaque consequuntur asperiores harum quibusdam voluptatibus saepe adipisci atque deserunt, incidunt enim! Quasi, fugiat libero veniam inventore et repudiandae expedita rem?"
-        ],
-        "imgSrc": "/images/imagem.jpg",
-        "imgAlt": "imagem"
+        "title": "Caso Clínico 1",
+        "fotos": [
+          {
+            "src": "/images/tratamentos/Prótese - Caso clínico 1 - Foto A.JPG",
+            "alt": "Caso clínico 1 Imagem A"
+          },
+          {
+            "src": "/images/tratamentos/Prótese - Caso clínico 1 - Foto B.JPG",
+            "alt": "Caso clínico 1 Imagem B"
+          },
+          {
+            "src": "/images/tratamentos/Prótese - Caso clínico 1 - Foto C.JPG",
+            "alt": "Caso clínico 1 Imagem C"
+          }
+        ]
       },
       {
-        "nome": "Programa de Controle Preventivo",
-        "descricao": [
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore laboriosam rerum eligendi pariatur in iste animi, distinctio quisquam assumenda, aliquid doloremque officia tenetur doloribus. Dolores voluptatibus, excepturi nostrum pariatur eaque alias eum saepe nihil quas laboriosam harum perspiciatis sequi inventore fugit eius est rerum sint porro quasi ab tempora maxime cumque sunt! Fugit blanditiis aliquam dolor eligendi, necessitatibus ratione enim aliquid tempora, facere officia repudiandae velit eius ut sit cupiditate repellat quidem, architecto fuga officiis id temporibus! Eveniet molestiae voluptate excepturi veritatis libero! Saepe sed unde dolor voluptatibus obcaecati distinctio odit iure earum repellat fuga, provident inventore nam labore a!",
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus illum, sed eligendi repellat dolorem magni voluptatum dolores exercitationem illo at, numquam eveniet nam repellendus quam. Maiores illo dicta consequuntur non!",
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque qui quia, magnam molestias excepturi voluptate illo modi sint error, iure aperiam reprehenderit harum enim. Impedit magni accusantium doloremque, beatae itaque consequuntur asperiores harum quibusdam voluptatibus saepe adipisci atque deserunt, incidunt enim! Quasi, fugiat libero veniam inventore et repudiandae expedita rem?"
-        ],
-        "imgSrc": "/images/imagem.jpg",
-        "imgAlt": "imagem"
+        "title": "Caso Clínico 2",
+        "fotos": [
+          {
+            "src": "/images/tratamentos/Prótese - Caso clínico 2 - Foto A.JPG",
+            "alt": "Caso clínico 2 Imagem A"
+          },
+          {
+            "src": "/images/tratamentos/Prótese - Caso clínico 2 - Foto B.JPG",
+            "alt": "Caso clínico 2 Imagem B"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nome": "Implantes Dentários",
+    "descricao": [
+      "Os implantes osseointegrados são componentes que substituem as raízes dos dentes naturais, quando essas já foram extraídas ou quando apresentam algum problema que impede a sua manutenção na arcada dentária. O implante é colocado no osso alveolar, no mesmo local que era ocupado pela raiz do dente comprometido, em um processo totalmente indolor e seguro. Após o processo de osseointegração, e colocada uma coroa de porcelana sobre esse implante, devolvendo a estética e a função do dente original."
+    ],
+    "imgSrc": "/images/tratamentos/Implante - ilustração.jpg",
+    "imgAlt": "ilustracao de um implante",
+    "imgList": []
+  },
+  {
+    "nome": "Tratamento ortodôntico (Aparelhos e alinhadores)",
+    "descricao": [
+      "Os aparelhos ortodônticos têm a função de reposicionar os dentes na arcada, realinhando e encaixando todos em posição para alcançar o melhor equilíbrio mastigatório aliado à melhor estética possível. Além dos aparelhos tradicionais e com bráquetes estéticos, trabalhamos também com alinhadores invisíveis da Invisalign®, a marca líder mundial em alinhadores."
+    ],
+    "imgSrc": "/images/Mazzoleni_logo.jpg",
+    "imgAlt": "logo Mazzoleni odontologia",
+    "imgList": [
+      {
+        "title": "unico",
+        "fotos": [
+          {
+            "src": "/images/tratamentos/Aparelho ortodontico - Imagem A.jpg",
+            "alt": "Aparelho ortodontico - Imagem A"
+          },
+          {
+            "src": "/images/tratamentos/Aparelho ortodontico - Imagem B.png",
+            "alt": "Aparelho ortodontico - Imagem B"
+          },
+          {
+            "src": "/images/tratamentos/Aparelho ortodontico - Imagem C.jpg",
+            "alt": "Aparelho ortodontico - Imagem C"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nome": "Cirurgias orais",
+    "descricao": [
+      "A especialidade de cirurgias orais abrange diversas modalidades cirúrgicas incluindo extrações dentárias simples e de dentes do siso, cirurgias de enxerto ósseo para colocação de implantes, cirurgias endodônticas (complementares ao tratamento de canal) entre outras."
+    ],
+    "imgSrc": "/images/imagem.jpg",
+    "imgAlt": "imagem de atendimento de microscopio",
+    "imgList": [
+      {
+        "title": "unico",
+        "fotos": [
+          {
+            "src": "/images/tratamentos/Cirurgia oral - Imagem 1.jpg",
+            "alt": "Cirurgia oral - Imagem 1"
+          },
+          {
+            "src": "/images/tratamentos/Cirurgia oral - Imagem 2.jpg",
+            "alt": "Cirurgia oral - Imagem 2"
+          },
+          {
+            "src": "/images/tratamentos/Cirurgia oral - Imagem 3.jpg",
+            "alt": "Cirurgia oral - Imagem 3"
+          }
+        ]
       }
     ]
   }

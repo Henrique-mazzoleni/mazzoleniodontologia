@@ -2,35 +2,40 @@ import IconCard from "../UI/IconCard";
 
 import {
   faMapLocationDot,
-  faClock,
-  faList,
-  faSun,
-  faEarthAmericas,
-} from "@fortawesome/free-solid-svg-icons";
+  faCar,
+  faSyringe,
+  faXRay,
+  faMicroscope,
+  faTeeth,
+} from '@fortawesome/free-solid-svg-icons';
 
-import styles from "../../styles/Sobre/Diferenciais.module.css";
+import styles from '../../styles/Sobre/Diferenciais.module.css';
 
 export default function Diferenciais() {
   const listaDiferenciais = [
     {
-      titulo: "Localização Privilegiada",
+      titulo: 'Localização Privilegiada a 200m do metrô',
       icone: faMapLocationDot,
     },
     {
-      titulo: "Horários Especiais de Atendimento",
-      icone: faClock,
+      titulo: 'Convênio com estacionamento local',
+      icone: faCar,
     },
     {
-      titulo: "Check-Up Digital",
-      icone: faList,
+      titulo: 'Anestesia eletrônica',
+      icone: faSyringe,
     },
     {
-      titulo: "Day Clinic",
-      icone: faSun,
+      titulo: 'Radiografia Digital',
+      icone: faXRay,
     },
     {
-      titulo: "Atendimento bilíngue (português e inglês)",
-      icone: faEarthAmericas,
+      titulo: 'Microscopia operatória',
+      icone: faMicroscope,
+    },
+    {
+      titulo: 'Alinhadores invisíveis',
+      icone: faTeeth,
     },
   ];
   return (

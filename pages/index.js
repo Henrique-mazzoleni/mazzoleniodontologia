@@ -29,7 +29,7 @@ export default function Home() {
           imgSrc="/images/Equipo.jpg"
           imgAlt="Sala de atendimento com equipo"
           text={[
-            'Atendemos todas as especialidades com o mais alto rigor técnico e as últimas tecnologias disponíveis no mercado.',
+            'Temos como objetivo principal devolver e preservar a sua saúde oral, associando conhecimento técnico a mais de 20 anos de experiência clínica, e sempre aplicando o que há de mais atual para entregar tratamentos minimamente invasivos que preservem ao máximo as estruturas naturais dos pacientes.',
           ]}
         />
         <Tratamentos listaTratamentos={tratamentosData} />

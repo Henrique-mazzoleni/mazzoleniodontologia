@@ -67,17 +67,10 @@ export default function Navbar() {
         Tratementos &gt;
         {showTratamentos && (
           <ul className={styles['drop-down-list']}>
-            {listaTratamentos.map(({ tipo, tratamentos }, i) => (
-              <div key={`${tipo}_${i}`}>
-                <span>{tipo}</span>
-                <ul>
-                  {tratamentos.map(({ nome }, i) => (
-                    <li key={i}>
-                      <Link href={`/${nome}`}>{nome}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+            {listaTratamentos.map(({ nome }, i) => (
+              <li key={i}>
+                <Link href={`/${nome}`}>{nome}</Link>
+              </li>
             ))}
           </ul>
         )}

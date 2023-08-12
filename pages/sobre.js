@@ -22,12 +22,10 @@ export default function Sobre() {
       <Header title="A Clínica" />
       <main className={styles.main}>
         <Description
-          imgSrc="/images/clínica.jpg"
+          imgSrc="/images/Mazzoleni_logo.jpg"
           imgAlt="recepcionista atendendo"
           text={[
-            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, tenetur, cumque dignissimos quia autem non optio alias provident amet est perferendis nobis veritatis unde nostrum consequatur. Debitis cupiditate a molestias.',
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minus sed amet assumenda mollitia quod blanditiis recusandae corrupti dignissimos sit.',
-            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi commodi, facere hic earum enim officia sunt quis ipsam harum architecto minima facilis sequi tempore reiciendis recusandae explicabo doloremque alias provident debitis saepe, ipsa neque, dolorum veritatis. Autem, porro asperiores voluptates, optio sequi, ab aperiam quod officiis ipsam quidem ea deleniti.',
+            'Fundada em 2007 no bairro de Moema, a clínica se estabeleceu dando foco ao atendimento ético e minimamente invasivo, sempre focando em procedimentos conservadores com o intuito de preservar as estruturas naturais dos pacientes. Para tanto, desde o início, diversos atendimentos são exectuados sob magnficação ótica com o auxílio do microscópio operatório. Em 2016 a clínica passou por uma ampliação, para melhor atender seus clientes. A aquisição de novas tecnologias no entanto é uma prática constante, sempre em busca de fornecer o que há de mais moderno em tratamento odontológico.',
           ]}
         />
         <Diferenciais />

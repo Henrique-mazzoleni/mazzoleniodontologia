@@ -18,7 +18,7 @@ export default function Infos() {
         <p>
           Segunda-Sexta
           <br />
-          8:00-17:00
+          9:00-17:30
         </p>
       </div>
       <div className={styles.card}>
@@ -43,7 +43,7 @@ export default function Infos() {
         <FontAwesomeIcon icon={faWhatsapp} size="2x" />
         <h3>Whatsapp</h3>
         <p>11 95000-2799</p>
-        </div>
+      </div>
     </section>
   );
 }
