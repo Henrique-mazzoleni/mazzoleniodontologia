@@ -1,12 +1,38 @@
+
+
 .galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 1200px;
+  margin: auto;
+  padding:  0 30px 70px;
+}
+
+.caso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.caso h2 {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight:500;
+  margin: 20px;
+}
+
+.caso-fotos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  min-height: 500px;
-  max-width: 1200px;
-  margin: auto;
-  padding: 70px 30px;
 }
 
 .foto-container {
@@ -18,4 +44,15 @@
 .foto-container:hover img {
   transition: transform 0.5s;
   transform: scale(1.1);
+}
+
+@media (max-width: 575px) {
+  .galeria {
+    padding: 10px;
+  }
+
+  .foto-container {
+    height: 200px;
+    width: 300px;
+  }
 }

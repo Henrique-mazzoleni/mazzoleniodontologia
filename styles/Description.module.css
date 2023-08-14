@@ -2,15 +2,17 @@
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 500px;
+  /* height: 400px; */
   max-width: 1220px;
   margin: auto;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 .image {
   flex: 1;
   position: relative;
-  height: 500px;
+  height: 400px;
   width: 50vw;
 }
 
@@ -32,9 +34,7 @@
   margin-bottom: 5px;
 }
 
-.home-description {
-  font-size: 1.5rem;
-  font-weight: 400;
+.home-description, .tratamento-description {
 }
 
 @media (max-width: 800px) {
@@ -45,22 +45,21 @@
 
 @media (max-width: 600px) {
   .description {
-    min-height: 350px;
+    flex-direction: column;
+  }
+
+  .text {
+    flex: none;
   }
 
   .image {
-    position: absolute;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
+    flex: none;
+    height: 300px;
+    width: 90%;
   }
 
   .image::after {
     background: #000;
-    opacity: 0.4;
-  }
-
-  .text p {
-    color: var(--light-color);
+    opacity: 0;
   }
 }

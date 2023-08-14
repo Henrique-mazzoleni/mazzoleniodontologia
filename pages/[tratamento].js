@@ -27,22 +27,24 @@ export default function Tratamento({ tratamentos }) {
       {imgList.length > 0 && (
         <section className={styles.galeria}>
           {imgList.map((caso) => {
-            console.log(caso.title);
-            <h3>{caso.title}</h3>;
-            caso.title !== 'unico' ? <h3>{caso.title}</h3> : '';
-            // {
-            //   caso.fotos.map((img) => (
-            //     <div key={img.src} className={styles['foto-container']}>
-            //       <Image
-            //         src={img.src}
-            //         alt={img.alt}
-            //         layout="fill"
-            //         objectFit="cover"
-            //         objectPosition="top center"
-            //       />
-            //     </div>
-            //   ));
-            // }
+            return (
+              <article key={caso.title} className={styles.caso}>
+                {caso.title !== 'unico' ? <h2>{caso.title}</h2> : ''}
+                <div className={styles['caso-fotos']}>
+                  {caso.fotos.map((img) => (
+                    <div key={img.src} className={styles['foto-container']}>
+                      <Image
+                        src={img.src}
+                        alt={img.alt}
+                        layout="fill"
+                        objectFit="cover"
+                        objectPosition="top center"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </article>
+            );
           })}
         </section>
       )}

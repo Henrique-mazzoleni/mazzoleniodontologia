@@ -11,7 +11,7 @@ export default function Description({ imgSrc, imgAlt, text, classProp }) {
           alt={imgAlt}
           placeholder="empty"
           layout="fill"
-          objectFit="cover"
+          objectFit="contain"
         />
       </div>
       <div className={styles.text}>
