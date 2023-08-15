@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+import { Fragment, useState } from 'react';
 
 import { useRouter } from 'next/router';
 import Image from 'next/image';
@@ -37,8 +37,7 @@ export default function Tratamento({ tratamentos }) {
                         src={img.src}
                         alt={img.alt}
                         layout="fill"
-                        objectFit="cover"
-                        objectPosition="top center"
+                        objectFit="contain"
                       />
                     </div>
                   ))}
