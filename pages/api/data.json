@@ -1,6 +1,6 @@
 [
   {
-    "nome": "Tratamento Endodôntico (tratamento de canal)",
+    "nome": "Tratamento Endodôntico (Tratamento de Canal)",
     "descricao": [
       "O tratamento endodôntico, popularmente conhecido com tratamento de canal, é indicado quando a polpa dental encontra-se inflamada ou necrosada. Ele consiste da remoção desse tecido inflamado e/ou da limpeza do espaço que esse ocupava, conhecido como o canal radicular. Essa limpeza interna do dente é feita atraves de instrumentos e substâncias químicas que têm como objetivo esvaziar o conteudo dos canais radiculares, removendo quaisquer tecidos e possível contaminação microbiana, para o posterior preenchimento desse espaço. Em casos de recontaminação ou persistência da contaminação após o tratamento endodôntico, pode ser indicado o retratamento convencional ou cirúrgico."
     ],
@@ -49,7 +49,7 @@
     ]
   },
   {
-    "nome": "Dentística (Restaurações diretas)",
+    "nome": "Dentística (Restaurações Diretas)",
     "descricao": [
       "A especialidade de dentística engloba os procedimentos restauradores executados de maneira direta no consultório dental, para devolver a forma e função dos dentes que perderam estrutura devido a processos cariosos ou a fraturas. Trabalhamos exclusivamente com materiais estéticos de primeira linha, e sempre buscando preservar ao máximo a estrutura natural dos dentes."
     ],
@@ -118,7 +118,7 @@
     ]
   },
   {
-    "nome": "Prótese Dentárias e Tratamento estético (Coroas e facetas de porcelana)",
+    "nome": "Prótese Dentárias e Tratamento Estético (Coroas e Facetas de Porcelana)",
     "descricao": [
       "As próteses dentárias englobam as modalidades de prótese total (“Dentadura”), prótese parcial removível (“ponte móvel”) e prótese fixa, que inclui as próteses fixa de múltiplos dentes e as coroas unitárias. As facetas de porcelanas também se encaixam nessa categoria, já que são restaurações indiretas, feitas em laboratório para substituir parte da estrutura dental perdida ou comprometida esteticamente. Sempre consulte seu dentista para saber qual tipo de prótese é mais indicado para o seu caso."
     ],
@@ -167,7 +167,7 @@
     "imgList": []
   },
   {
-    "nome": "Tratamento ortodôntico (Aparelhos e alinhadores)",
+    "nome": "Tratamento Ortodôntico (Aparelhos e Alinhadores)",
     "descricao": [
       "Os aparelhos ortodônticos têm a função de reposicionar os dentes na arcada, realinhando e encaixando todos em posição para alcançar o melhor equilíbrio mastigatório aliado à melhor estética possível. Além dos aparelhos tradicionais e com bráquetes estéticos, trabalhamos também com alinhadores invisíveis da Invisalign®, a marca líder mundial em alinhadores."
     ],
@@ -194,7 +194,7 @@
     ]
   },
   {
-    "nome": "Cirurgias orais",
+    "nome": "Cirurgias Orais",
     "descricao": [
       "A especialidade de cirurgias orais abrange diversas modalidades cirúrgicas incluindo extrações dentárias simples e de dentes do siso, cirurgias de enxerto ósseo para colocação de implantes, cirurgias endodônticas (complementares ao tratamento de canal) entre outras."
     ],
