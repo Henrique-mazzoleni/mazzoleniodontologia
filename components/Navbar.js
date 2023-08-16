@@ -64,7 +64,7 @@ export default function Navbar() {
         onMouseLeave={!mobileMode ? showTratamentosHandler : () => {}}
         onClick={mobileMode ? showTratamentosHandler : () => {}}
       >
-        Tratementos &gt;
+        Tratamentos &gt;
         {showTratamentos && (
           <ul className={styles['drop-down-list']}>
             {listaTratamentos.map(({ nome }, i) => (
