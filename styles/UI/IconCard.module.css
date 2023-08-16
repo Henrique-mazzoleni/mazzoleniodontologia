@@ -1,7 +1,7 @@
 .card {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     gap: 15px;
     width: 270px;
@@ -14,4 +14,8 @@
 
 .link{
     cursor: pointer;
+}
+
+.card h4 {
+    flex-basis: 185px;
 }

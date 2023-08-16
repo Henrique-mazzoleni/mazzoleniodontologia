@@ -2,7 +2,6 @@
   position: relative;
   display: flex;
   align-items: center;
-  /* height: 400px; */
   max-width: 1220px;
   margin: auto;
   font-size: 1.2rem;
@@ -34,12 +33,23 @@
   margin-bottom: 5px;
 }
 
-.home-description, .tratamento-description {
-}
-
 @media (max-width: 800px) {
+  .description {
+    justify-content: end;
+    max-width: 1220px;
+    margin: auto;
+  }
+
   .image {
-    flex: 2;
+    position: absolute;
+    inset: 0;
+    height: auto;
+    width: 60%;
+    z-index: -1;
+  }
+
+  .text {
+    flex: 0 0 60%;
   }
 }
 
@@ -53,6 +63,7 @@
   }
 
   .image {
+    position: relative;
     flex: none;
     height: 300px;
     width: 90%;
