@@ -89,7 +89,7 @@ export default function MapLinks() {
           <div className={styles.row}>
             <FontAwesomeIcon icon={faClock} size="2x" />
             <h4>
-              <span>Segunda-Sexta - 8:00-17:00</span>
+              <span>Segunda-Sexta - 9:00-17:30</span>
             </h4>
           </div>
         </div>
