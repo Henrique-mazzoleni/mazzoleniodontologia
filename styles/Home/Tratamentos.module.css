@@ -1,7 +1,7 @@
 .tratamentos {
     max-width: 1200px;
     color: var(--primary-color);
-    margin: 50px auto;
+    margin: 0 auto 50px;
 }
 
 .tratamentos h2 {

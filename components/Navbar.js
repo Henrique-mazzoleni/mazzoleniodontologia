@@ -76,7 +76,7 @@ export default function Navbar() {
         )}
       </li>
       <li>
-        <Link href="/contato">Contatos</Link>
+        <Link href="/contato">Contato</Link>
       </li>
     </Fragment>
   );
