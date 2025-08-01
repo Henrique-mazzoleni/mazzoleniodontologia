@@ -7,34 +7,39 @@ import {
   faXRay,
   faMicroscope,
   faTeeth,
-} from '@fortawesome/free-solid-svg-icons';
+  faHighlighter,
+} from "@fortawesome/free-solid-svg-icons";
 
-import styles from '../../styles/Sobre/Diferenciais.module.css';
+import styles from "../../styles/Sobre/Diferenciais.module.css";
 
 export default function Diferenciais() {
   const listaDiferenciais = [
     {
-      titulo: 'Localização Privilegiada a 200m do metrô',
+      titulo: "Localização Privilegiada a 200m do metrô",
       icone: faMapLocationDot,
     },
     {
-      titulo: 'Convênio com estacionamento local',
+      titulo: "Convênio com estacionamento local",
       icone: faCar,
     },
     {
-      titulo: 'Anestesia eletrônica',
+      titulo: "Anestesia eletrônica",
       icone: faSyringe,
     },
     {
-      titulo: 'Radiografia Digital',
+      titulo: "Radiografia Digital",
       icone: faXRay,
     },
     {
-      titulo: 'Microscopia operatória',
+      titulo: "Microscopia operatória",
       icone: faMicroscope,
     },
     {
-      titulo: 'Alinhadores invisíveis',
+      titulo: "Scanner Intra-oral",
+      icone: faHighlighter,
+    },
+    {
+      titulo: "Alinhadores invisíveis",
       icone: faTeeth,
     },
   ];
