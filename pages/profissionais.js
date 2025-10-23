@@ -1,10 +1,10 @@
-import { Fragment } from 'react';
+import { Fragment } from "react";
 
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
-import Bio from '../components/Profissionais/Bio';
-import Whatsapp from '../components/Whatsapp';
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Bio from "../components/Profissionais/Bio";
+import Whatsapp from "../components/Whatsapp";
 
 export default function Profissionais() {
   return (
@@ -14,7 +14,7 @@ export default function Profissionais() {
       <Bio
         imgSrc="/images/bios/Leonardo.jpg"
         imgAlt="Dr. Leonardo Mazzoleni"
-        bio="Prof. Me. Leonardo B. Mazzoleni - CROSP 77504 - Graduado em Odontologia pela USP em 2002; Especialista em endodontia pela USP em 2006; Mestre em Bio-odontologia pela UNIB em 2013. Professor de endodontia na graduação e pós-graduação da Universidade Metodista de São Paulo. Atua na clínica geral e com enfoque em endodontia microscópica convencional e cirúrgica."
+        bio="Prof. Me. Leonardo B. Mazzoleni - CROSP 77504 - Graduado em Odontologia pela USP em 2002; Especialista em endodontia pela USP em 2006; Mestre em Bio-odontologia pela UNIB em 2013. Professor de endodontia na graduação e pós-graduação da Universidade Metodista de São Paulo. Professor de endodontia na graduação na Faculdade Israelita de Ciências da Saúde Albert Einstein do Hospital Israelita Albert Einstein de São Paulo. Atua na clínica geral e com enfoque em endodontia microscópica convencional e cirúrgica."
         sortLeft={false}
       />
       <Bio
